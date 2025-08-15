@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Rudra | BTech CSE AIML Portfolio</title>
+    <style>
+        :root {
+            --primary: #2d2e32;
+            --accent: #4f8cff;
+            --bg: #f7f8fa;
+            --white: #fff;
+            --gray: #6c757d;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: var(--bg);
+            color: var(--primary);
+            line-height: 1.6;
+        }
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 8px rgba(44,62,80,0.06);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+        nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+            color: var(--accent);
+            letter-spacing: 1px;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        .nav-links li a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .nav-links li a:hover {
+            color: var(--accent);
+        }
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 6rem 2rem 2rem 2rem;
+        }
+        section {
+            margin-bottom: 4rem;
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s, transform 0.8s;
+        }
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        #home {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+            text-align: center;
+        }
+        #home h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        #home .typing {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 1.3rem;
+            min-height: 1.5em;
+            letter-spacing: 1px;
+        }
+        #about, #skills, #projects, #contact {
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 2px 16px rgba(44,62,80,0.07);
+            padding: 2rem;
+        }
+        #about h2, #skills h2, #projects h2, #contact h2 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+        #about p {
+            color: var(--gray);
+            font-size: 1.1rem;
+        }
+        #skills ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+            list-style: none;
+            margin-top: 1rem;
+        }
+        #skills li {
+            background: var(--bg);
+            padding: 0.7rem 1.3rem;
+            border-radius: 20px;
+            font-weight: 500;
+            color: var(--primary);
+            box-shadow: 0 1px 4px rgba(44,62,80,0.04);
+            font-size: 1rem;
+        }
+        #projects .project-list {
+            margin-top: 1rem;
+            color: var(--gray);
+            font-style: italic;
+        }
+        #contact .contact-info {
+            margin-top: 1rem;
+            font-size: 1.1rem;
+        }
+        #contact .contact-info span {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+                padding: 1rem;
+            }
+            main {
+                padding: 6rem 1rem 1rem 1rem;
+            }
+            #skills ul {
+                flex-direction: column;
+                gap: 0.7rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Rudra</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About </a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Hi, I'm Rudra</h1>
+            <div class="typing" id="typing"></div>
+            <p style="margin-top:1.5rem;color:#6c757d;">
+                Welcome to my portfolio! I'm a first-year BTech CSE AIML student, passionate about technology and learning new things every day.
+            </p>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I'm currently pursuing my BTech in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning. As a first-year student, I'm eager to explore the world of technology, especially web development, coding, and AI tools. My journey has just begun, and I'm excited to build, create, and grow as a developer and learner.
+            </p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>Web Development (Front-end)</li>
+                <li>eBook Creation</li>
+                <li>Prompt Generation</li>
+                <li>Coding</li>
+                <li>DSA with C++</li>
+                <li>AI Tools</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-list">
+                (Projects coming soon!)
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <span><strong>Phone:</strong> 565656</span>
+                <span><strong>Email:</strong> <a href="mailto:rudra@email.com" style="color:var(--accent);text-decoration:none;">rudra@email.com</a></span>
+            </div>
+        </section>
+    </main>
+    <script>
+        // Smooth scrolling for nav links
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: target.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Typing effect for Home section
+        const typingTexts = [
+            "BTech CSE AIML Student",
+            "Front-end Web Developer (in progress)",
+            "eBook Creator",
+            "Prompt Generator",
+            "C++ & DSA Enthusiast",
+            "AI Tools Explorer"
+        ];
+        let typingIndex = 0, charIndex = 0, isDeleting = false;
+        const typingElement = document.getElementById('typing');
+
+        function type() {
+            const current = typingTexts[typingIndex];
+            if (isDeleting) {
+                typingElement.textContent = current.substring(0, charIndex--);
+                if (charIndex < 0) {
+                    isDeleting = false;
+                    typingIndex = (typingIndex + 1) % typingTexts.length;
+                    setTimeout(type, 600);
+                } else {
+                    setTimeout(type, 40);
+                }
+            } else {
+                typingElement.textContent = current.substring(0, charIndex++);
+                if (charIndex > current.length) {
+                    isDeleting = true;
+                    setTimeout(type, 900);
+                } else {
+                    setTimeout(type, 80);
+                }
+            }
+        }
+        type();
+
+        // Fade-in animation for sections on scroll
+        function revealSections() {
+            const sections = document.querySelectorAll('main section');
+            const trigger = window.innerHeight * 0.85;
+            sections.forEach(sec => {
+                const rect = sec.getBoundingClientRect();
+                if (rect.top < trigger) {
+                    sec.classList.add('visible');
+                }
+            });
+        }
+        window.addEventListener('scroll', revealSections);
+        window.addEventListener('load', revealSections);
+    </script>
+</body>
+</html>
