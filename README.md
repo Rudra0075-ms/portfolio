@@ -1,12 +1,17 @@
 # 👋 Hi, I'm Rudra Madhab Sahoo
 
+> 🎓 2nd Year B.Tech CSE (AI & ML) | 🚀 Aspiring AI Engineer | 📍 Odisha, India
+
+---
+
 ## 🚀 About Me
 
-* 🎓 2nd Year B.Tech CSE (AI & ML) Student
-* 💻 Passionate about Python, Web Development, Agentic AI, and AI Agents
-* 📚 Currently learning Python, Data Structures & Algorithms, and AI Technologies
-* 💡 Continuously improving my coding and problem-solving skills
-* 🎯 Aspiring AI Engineer
+| | |
+|---|---|
+| 🎓 **Degree** | B.Tech CSE with AI & ML Specialization (2nd Year) |
+| 💻 **Interests** | Python · Web Development · Agentic AI · AI Agents |
+| 📚 **Currently Learning** | DSA · LangChain · LangGraph · Machine Learning |
+| 🎯 **Goal** | Aspiring AI Engineer targeting real-world AI projects |
 
 ---
 
@@ -14,141 +19,109 @@
 
 ### Programming Languages
 
-* Python
-* C
-* Java
+| Language | Level |
+|---|---|
+| 🐍 Python | Intermediate |
+| ☕ Java | Intermediate |
+| 🔧 C | Intermediate |
 
 ### Web Development
 
-* HTML
-* CSS
-* JavaScript
+| Technology | Level |
+|---|---|
+| 🌐 HTML | Intermediate |
+| 🎨 CSS | Intermediate |
+| ⚡ JavaScript | Intermediate |
 
 ### Tools & Technologies
 
-* Git
-* GitHub
-* VS Code
-* PyCharm
+| Tool | Purpose |
+|---|---|
+| 🗂️ Git | Version Control |
+| 🐙 GitHub | Repository Hosting |
+| 💻 VS Code | Code Editor |
+| 🧪 PyCharm | Python IDE |
 
 ### Database
 
-* MySQL (Basic)
+| Database | Level |
+|---|---|
+| 🛢️ MySQL | Basic |
 
 ---
 
 ## 📂 Projects
 
-### 🌐 Portfolio Website
-
-**Technologies:** HTML, CSS, JavaScript
-
-A personal portfolio website showcasing my skills, projects, and learning journey as a developer.
-
-🔗 Live Demo: https://rudra0075-ms.github.io/portfolio/
-🔗 Repository: https://github.com/Rudra0075-ms/portfolio
----
-
-### 💪 Fitness Guide Website
-
-**Technologies:** HTML, CSS, JavaScript
-
-A fitness guide website designed to help users maintain a balanced diet and healthy lifestyle through useful fitness information.
-
-🔗 Live Demo: https://rudra0075-ms.github.io/fitness_guide/
-🔗 Repository: https://github.com/Rudra0075-ms/fitness_guide
----
-
-### 🧮 All-in-One Calculator Website
-
-**Technologies:** HTML, CSS, JavaScript
-
-A calculator application that supports both basic and scientific calculations through an easy-to-use interface.
-
-🔗 Live Demo: https://rudra0075-ms.github.io/All-in-one-Calculator/
-🔗 Repository: https://github.com/Rudra0075-ms/All-in-one-Calculator
-
----
-
-### 🕒 Analog Watch Website
-
-**Technologies:** HTML, CSS, JavaScript
-
-A real-time analog clock displaying Indian Standard Time (IST) using JavaScript.
-
-🔗 Live Demo: https://rudra0075-ms.github.io/analog_watch/
-🔗 Repository: https://github.com/Rudra0075-ms/analog_watch
----
-
-### 🎮 Memory Card Game Website
-
-**Technologies:** HTML, CSS, JavaScript
-
-An interactive memory game featuring multiple difficulty levels designed to improve concentration and memory skills.
-
-🔗 Live Demo: https://rudra0075-ms.github.io/memory_card_game/
-🔗 Repository: https://github.com/Rudra0075-ms/memory_card_game
-
----
-
-### ✅ To-Do List Website
-
-**Technologies:** HTML, CSS, JavaScript
-
-A task management application that helps users organize, track, and manage daily activities efficiently.
-
-🔗 Live Demo: https://rudra0075-ms.github.io/to-do-list___web/
-🔗 Repository: https://github.com/Rudra0075-ms/to-do-list___web
-
----
-
-## 🏆 Achievements
-
-* Built 6+ personal web development projects
-* Actively learning AI, Machine Learning
-* Consistently improving coding and problem-solving skills
+| # | Project | Tech Stack | Description | Links |
+|---|---|---|---|---|
+| 1 | 🌐 **Portfolio Website** | HTML · CSS · JS | Personal portfolio showcasing skills, projects & learning journey | [Live](https://rudra0075-ms.github.io/portfolio/) · [Repo](https://github.com/Rudra0075-ms/portfolio) |
+| 2 | 💪 **Fitness Guide Website** | HTML · CSS · JS | Helps users maintain balanced diet and healthy lifestyle | [Live](https://rudra0075-ms.github.io/fitness_guide/) · [Repo](https://github.com/Rudra0075-ms/fitness_guide) |
+| 3 | 🧮 **All-in-One Calculator** | HTML · CSS · JS | Supports basic & scientific calculations with easy-to-use UI | [Live](https://rudra0075-ms.github.io/All-in-one-Calculator/) · [Repo](https://github.com/Rudra0075-ms/All-in-one-Calculator) |
+| 4 | 🕒 **Analog Watch** | HTML · CSS · JS | Real-time analog clock displaying Indian Standard Time (IST) | [Live](https://rudra0075-ms.github.io/analog_watch/) · [Repo](https://github.com/Rudra0075-ms/analog_watch) |
+| 5 | 🎮 **Memory Card Game** | HTML · CSS · JS | Interactive memory game with multiple difficulty levels | [Live](https://rudra0075-ms.github.io/memory_card_game/) · [Repo](https://github.com/Rudra0075-ms/memory_card_game) |
+| 6 | ✅ **To-Do List App** | HTML · CSS · JS | Task management app to organize and track daily activities | [Live](https://rudra0075-ms.github.io/to-do-list___web/) · [Repo](https://github.com/Rudra0075-ms/to-do-list___web) |
 
 ---
 
 ## 📈 Currently Learning
 
-* Advanced Python 
-* Data Structures and Algorithms (DSA)
-* Agentic AI and AI Agents
-* LangChain and LangGraph
-* Machine Learning Fundamentals
+| Topic | Status |
+|---|---|
+| 🐍 Advanced Python | 🔄 In Progress |
+| 🧩 Data Structures & Algorithms | 🔄 In Progress |
+| 🤖 Agentic AI & AI Agents | 🔄 In Progress |
+| 🔗 LangChain & LangGraph | 🔄 In Progress |
+| 📊 Machine Learning Fundamentals | 🔄 In Progress |
 
 ---
 
 ## 🎯 Goals for 2026
 
-* Master Python Programming
-* Strengthen Data Structures and Algorithms
-* Build AI Agents using LangChain and LangGraph
-* Develop Real-World AI Projects
+| Goal | Area |
+|---|---|
+| 🐍 Master Python Programming | Core Skills |
+| 🧩 Strengthen DSA | Problem Solving |
+| 🤖 Build AI Agents with LangChain & LangGraph | AI / GenAI |
+| 🌍 Develop Real-World AI Projects | Portfolio |
+
+---
+
+## 🏆 Achievements
+
+| Achievement |
+|---|
+| 🚀 Built 6+ personal web development projects |
+| 🤖 Actively learning AI & Machine Learning |
+| 💡 Consistently improving coding & problem-solving skills |
 
 ---
 
 ## 🌐 Coding Profiles
 
-* GitHub: https://github.com/Rudra0075-ms
-* codolio: https://codolio.com/profile/Rms_007
+| Platform | Link |
+|---|---|
+| 🐙 GitHub | [github.com/Rudra0075-ms](https://github.com/Rudra0075-ms) |
+| 📊 Codolio | [codolio.com/profile/Rms_007](https://codolio.com/profile/Rms_007) |
 
 ---
 
 ## 📫 Connect With Me
 
-* GitHub: https://github.com/Rudra0075-ms
-* Email: [msrudra0075@gmail.com](mailto:msrudra0075@gmail.com)
-
----
-
-## 🗒️ Note
-
-These projects represent my learning journey and hands-on practice in programming and web development. I am continuously improving my skills and working toward building impactful real-world projects in AI, Machine Learning.
+| Platform | Link |
+|---|---|
+| 🐙 GitHub | [github.com/Rudra0075-ms](https://github.com/Rudra0075-ms) |
+| 📧 Email | [msrudra0075@gmail.com](mailto:msrudra0075@gmail.com) |
 
 ---
 
 ## ⭐ Fun Fact
 
-I enjoy building projects, solving coding problems, and exploring new technologies. Every project teaches me something new and helps me grow as a programmer.
+> I enjoy building projects, solving coding problems, and exploring new technologies.
+> Every project teaches me something new and helps me grow as a programmer.
+
+---
+
+<p align="center">
+  <i>These projects represent my learning journey and hands-on practice in programming and web development.<br>
+  I am continuously improving my skills and working toward building impactful real-world projects in AI & Machine Learning.</i>
+</p>
