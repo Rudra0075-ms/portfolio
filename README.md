@@ -115,7 +115,7 @@ A task management application that helps users organize, track, and manage daily
 
 ## 📈 Currently Learning
 
-* Python 
+* Advanced Python 
 * Data Structures and Algorithms (DSA)
 * Agentic AI and AI Agents
 * LangChain and LangGraph
