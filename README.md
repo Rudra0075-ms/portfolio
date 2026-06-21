@@ -46,8 +46,7 @@
 A personal portfolio website showcasing my skills, projects, and learning journey as a developer.
 
 🔗 Live Demo: https://rudra0075-ms.github.io/portfolio/
-🔗 Repository: Available on GitHub
-
+🔗 Repository: https://github.com/Rudra0075-ms/portfolio
 ---
 
 ### 💪 Fitness Guide Website
@@ -57,8 +56,7 @@ A personal portfolio website showcasing my skills, projects, and learning journe
 A fitness guide website designed to help users maintain a balanced diet and healthy lifestyle through useful fitness information.
 
 🔗 Live Demo: https://rudra0075-ms.github.io/fitness_guide/
-🔗 Repository: Available on GitHub
-
+🔗 Repository: https://github.com/Rudra0075-ms/fitness_guide
 ---
 
 ### 🧮 All-in-One Calculator Website
@@ -68,7 +66,7 @@ A fitness guide website designed to help users maintain a balanced diet and heal
 A calculator application that supports both basic and scientific calculations through an easy-to-use interface.
 
 🔗 Live Demo: https://rudra0075-ms.github.io/All-in-one-Calculator/
-🔗 Repository: Available on GitHub
+🔗 Repository: https://github.com/Rudra0075-ms/All-in-one-Calculator
 
 ---
 
@@ -79,8 +77,7 @@ A calculator application that supports both basic and scientific calculations th
 A real-time analog clock displaying Indian Standard Time (IST) using JavaScript.
 
 🔗 Live Demo: https://rudra0075-ms.github.io/analog_watch/
-🔗 Repository: Available on GitHub
-
+🔗 Repository: https://github.com/Rudra0075-ms/analog_watch
 ---
 
 ### 🎮 Memory Card Game Website
@@ -90,7 +87,7 @@ A real-time analog clock displaying Indian Standard Time (IST) using JavaScript.
 An interactive memory game featuring multiple difficulty levels designed to improve concentration and memory skills.
 
 🔗 Live Demo: https://rudra0075-ms.github.io/memory_card_game/
-🔗 Repository: Available on GitHub
+🔗 Repository: https://github.com/Rudra0075-ms/memory_card_game
 
 ---
 
@@ -101,7 +98,7 @@ An interactive memory game featuring multiple difficulty levels designed to impr
 A task management application that helps users organize, track, and manage daily activities efficiently.
 
 🔗 Live Demo: https://rudra0075-ms.github.io/to-do-list___web/
-🔗 Repository: Available on GitHub
+🔗 Repository: https://github.com/Rudra0075-ms/to-do-list___web
 
 ---
 
