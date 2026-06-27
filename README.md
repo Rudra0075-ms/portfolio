@@ -50,7 +50,7 @@
 
 ---
 
-## 📂 Projects
+## 📂 Repos
 
 | # | Project | Tech Stack | Description | Links |
 |---|---|---|---|---|
