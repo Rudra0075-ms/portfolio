@@ -91,7 +91,7 @@
 
 | Achievement |
 |---|
-| 🚀 Built 6+ personal web development projects |
+| 🚀 Built 6+ personal web development websites |
 | 💻 Learning by building Python projects consistently |
 | 🤖 Actively learning AI & Machine Learning |
 | 💡 Consistently improving coding & problem-solving skills |
