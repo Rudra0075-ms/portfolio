@@ -40,7 +40,7 @@
 | 🗂️ Git | Version Control |
 | 🐙 GitHub | Repository Hosting |
 | 💻 VS Code | Code Editor |
-| 🧪 PyCharm | Python IDE |
+| 🧪 Antigravity IDE | Code Editor |
 
 ### Database
 
@@ -54,12 +54,13 @@
 
 | # | Project | Tech Stack | Description | Links |
 |---|---|---|---|---|
-| 1 | 🌐 **Portfolio Website** | HTML · CSS · JS | Personal portfolio showcasing skills, projects & learning journey | [Live](https://rudra0075-ms.github.io/portfolio/) · [Repo](https://github.com/Rudra0075-ms/portfolio) |
-| 2 | 💪 **Fitness Guide Website** | HTML · CSS · JS | Helps users maintain balanced diet and healthy lifestyle | [Live](https://rudra0075-ms.github.io/fitness_guide/) · [Repo](https://github.com/Rudra0075-ms/fitness_guide) |
-| 3 | 🧮 **All-in-One Calculator** | HTML · CSS · JS | Supports basic & scientific calculations with easy-to-use UI | [Live](https://rudra0075-ms.github.io/All-in-one-Calculator/) · [Repo](https://github.com/Rudra0075-ms/All-in-one-Calculator) |
-| 4 | 🕒 **Analog Watch** | HTML · CSS · JS | Real-time analog clock displaying Indian Standard Time (IST) | [Live](https://rudra0075-ms.github.io/analog_watch/) · [Repo](https://github.com/Rudra0075-ms/analog_watch) |
-| 5 | 🎮 **Memory Card Game** | HTML · CSS · JS | Interactive memory game with multiple difficulty levels | [Live](https://rudra0075-ms.github.io/memory_card_game/) · [Repo](https://github.com/Rudra0075-ms/memory_card_game) |
-| 6 | ✅ **To-Do List App** | HTML · CSS · JS | Task management app to organize and track daily activities | [Live](https://rudra0075-ms.github.io/to-do-list___web/) · [Repo](https://github.com/Rudra0075-ms/to-do-list___web) |
+| 1 | 🧮 **Age Calculator Program** | Python | A simple Python program that calculates a person's exact age in years, months, and days based on their birth date. | [Repo](https://github.com/Rudra0075-ms/age_calculator) |
+| 2 | 🌐 **Portfolio Website** | HTML · CSS · JS | Personal portfolio showcasing skills, projects & learning journey | [Live](https://rudra0075-ms.github.io/portfolio/) · [Repo](https://github.com/Rudra0075-ms/portfolio) |
+| 3 | 💪 **Fitness Guide Website** | HTML · CSS · JS | Helps users maintain balanced diet and healthy lifestyle | [Live](https://rudra0075-ms.github.io/fitness_guide/) · [Repo](https://github.com/Rudra0075-ms/fitness_guide) |
+| 4 | 🧮 **All-in-One Calculator** | HTML · CSS · JS | Supports basic & scientific calculations with easy-to-use UI | [Live](https://rudra0075-ms.github.io/All-in-one-Calculator/) · [Repo](https://github.com/Rudra0075-ms/All-in-one-Calculator) |
+| 5 | 🕒 **Analog Watch** | HTML · CSS · JS | Real-time analog clock displaying Indian Standard Time (IST) | [Live](https://rudra0075-ms.github.io/analog_watch/) · [Repo](https://github.com/Rudra0075-ms/analog_watch) |
+| 6 | 🎮 **Memory Card Game** | HTML · CSS · JS | Interactive memory game with multiple difficulty levels | [Live](https://rudra0075-ms.github.io/memory_card_game/) · [Repo](https://github.com/Rudra0075-ms/memory_card_game) |
+| 7 | ✅ **To-Do List App** | HTML · CSS · JS | Task management app to organize and track daily activities | [Live](https://rudra0075-ms.github.io/to-do-list___web/) · [Repo](https://github.com/Rudra0075-ms/to-do-list___web) |
 
 ---
 
@@ -91,6 +92,7 @@
 | Achievement |
 |---|
 | 🚀 Built 6+ personal web development projects |
+| 💻 Learning by building Python projects consistently |
 | 🤖 Actively learning AI & Machine Learning |
 | 💡 Consistently improving coding & problem-solving skills |
 
