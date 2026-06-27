@@ -3,362 +3,348 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rudra | Portfolio</title>
-
-<style>
-/* ================= PREMIUM UNDERWATER THEME ================= */
-:root{
-    --bg:#020617;
-    --deep:#020c2b;
-    --card:rgba(10,30,80,0.55);
-    --accent:#4ea8ff;
-    --accent-glow:#4ea8ff88;
-    --text:#eaf3ff;
-    --gray:#9fb4d9;
-}
-
-*{margin:0;padding:0;box-sizing:border-box;}
-
-body{
-    font-family:'Segoe UI',sans-serif;
-    background:linear-gradient(to bottom,#020617,#020c2b,#03123f);
-    color:var(--text);
-    overflow-x:hidden;
-}
-
-/* ================= LIGHT RAYS ================= */
-body::before{
-    content:"";
-    position:fixed;
-    inset:0;
-    background:
-        radial-gradient(circle at 50% -10%, rgba(78,168,255,0.25), transparent 60%),
-        linear-gradient(to bottom, rgba(255,255,255,0.04), transparent 30%);
-    pointer-events:none;
-    z-index:-2;
-}
-
-/* ================= WAVES ================= */
-.waves{
-    position:fixed;
-    top:0;
-    left:0;
-    width:200%;
-    height:120px;
-    background:rgba(78,168,255,0.12);
-    border-radius:40%;
-    animation:waveMove 14s linear infinite;
-    z-index:-1;
-}
-
-@keyframes waveMove{
-    from{transform:translateX(0);}
-    to{transform:translateX(-50%);}
-}
-
-/* ================= BUBBLES ================= */
-.bubbles{
-    position:fixed;
-    inset:0;
-    pointer-events:none;
-    z-index:-1;
-}
-
-.bubble{
-    position:absolute;
-    bottom:-100px;
-    background:rgba(255,255,255,0.18);
-    border-radius:50%;
-    box-shadow:inset 0 0 10px rgba(255,255,255,0.3);
-    animation:rise linear infinite;
-}
-
-@keyframes rise{
-    from{transform:translateY(0);opacity:.9;}
-    to{transform:translateY(-110vh);opacity:0;}
-}
-
-/* ================= HEADER ================= */
-header{
-    position:fixed;
-    width:100%;
-    backdrop-filter:blur(14px);
-    background:rgba(10,20,60,0.6);
-    border-bottom:1px solid rgba(78,168,255,0.15);
-    z-index:1000;
-}
-
-nav{
-    max-width:1100px;
-    margin:auto;
-    padding:1rem 2rem;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.logo{
-    font-size:1.4rem;
-    font-weight:bold;
-    color:var(--accent);
-    text-shadow:0 0 10px var(--accent-glow);
-}
-
-.nav-links{
-    list-style:none;
-    display:flex;
-    gap:1.5rem;
-}
-
-.nav-links a{
-    text-decoration:none;
-    color:var(--text);
-    position:relative;
-}
-
-.nav-links a:hover{
-    color:var(--accent);
-}
-
-/* ================= MAIN ================= */
-main{
-    max-width:1100px;
-    margin:auto;
-    padding:7rem 2rem 2rem;
-}
-
-/* Premium glass cards */
-section{
-    background:var(--card);
-    backdrop-filter:blur(16px);
-    border:1px solid rgba(78,168,255,0.15);
-    border-radius:16px;
-    padding:2rem;
-    margin-bottom:3rem;
-    box-shadow:
-        0 20px 60px rgba(0,0,0,.7),
-        inset 0 0 40px rgba(78,168,255,0.05);
-    transition:.5s;
-    opacity:0;
-    transform:translateY(40px) scale(.98);
-}
-
-section.visible{
-    opacity:1;
-    transform:translateY(0) scale(1);
-}
-
-section:hover{
-    box-shadow:
-        0 25px 70px rgba(0,0,0,.9),
-        0 0 30px var(--accent-glow);
-}
-
-h2{
-    color:var(--accent);
-    margin-bottom:1rem;
-}
-
-/* ================= HERO ================= */
-#home{
-    text-align:center;
-    background:transparent;
-    border:none;
-    box-shadow:none;
-}
-
-#home h1{
-    font-size:2.8rem;
-    text-shadow:0 0 20px var(--accent-glow);
-}
-
-.typing{
-    color:var(--accent);
-    font-size:1.4rem;
-    font-weight:600;
-    min-height:1.5em;
-}
-
-/* ================= SKILLS ================= */
-#skills ul{
-    display:flex;
-    flex-wrap:wrap;
-    gap:1rem;
-    list-style:none;
-}
-
-#skills li{
-    background:rgba(0,0,0,0.25);
-    padding:.6rem 1.2rem;
-    border-radius:20px;
-    border:1px solid rgba(78,168,255,.3);
-    transition:.3s;
-}
-
-#skills li:hover{
-    transform:translateY(-5px) scale(1.05);
-    box-shadow:0 0 15px var(--accent-glow);
-}
-
-/* ================= FLOAT BUTTONS ================= */
-.float-btn{
-    position:fixed;
-    right:20px;
-    width:52px;
-    height:52px;
-    border-radius:50%;
-    background:linear-gradient(145deg,#4ea8ff,#1b6cff);
-    color:white;
-    border:none;
-    font-size:20px;
-    cursor:pointer;
-    box-shadow:0 10px 25px rgba(0,0,0,.6);
-    transition:.3s;
-}
-
-.float-btn:hover{
-    transform:scale(1.15);
-    box-shadow:0 0 20px var(--accent-glow);
-}
-
-.github-btn{bottom:90px;}
-.top-btn{bottom:20px;}
-
-/* ================= RESPONSIVE ================= */
-@media(max-width:768px){
-    nav{
-        flex-direction:column;
-        gap:.8rem;
-    }
-    .nav-links{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-    main{padding:7rem 1rem;}
-}
-</style>
+<title>Rudra Madhab Sahoo | AI & ML Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <div class="waves"></div>
+<div class="waves"></div>
 <div class="bubbles" id="bubbles"></div>
 
+<!-- ===== HEADER ===== -->
 <header>
-<nav>
-    <div class="logo">Rudra Madhab Sahoo</div>
+  <nav>
+    <div class="logo">⚡ Rudra</div>
     <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#learning">Learning</a></li>
+      <li><a href="#goals">Goals</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-</nav>
+  </nav>
 </header>
 
 <main>
 
-<section id="home" class="visible">
-<h1>Hi, I'm Rudra</h1>
-<div class="typing" id="typing"></div>
-<p style="margin-top:1rem;color:var(--gray)">
-Building the future with Python, AI agents, Agentic AI.
-</p>
-</section>
+  <!-- ===== HERO ===== -->
+  <section id="home" class="visible">
+    <div class="hero-badge">
+      🎓 2nd Year B.Tech CSE (AI &amp; ML) &nbsp;·&nbsp; 📍 Odisha, India
+    </div>
+    <h1>Rudra Madhab Sahoo</h1>
+    <div class="typing-wrap">
+      <span class="typing" id="typing"></span><span class="cursor"></span>
+    </div>
+    <p class="hero-desc">
+      Building the future with Python, AI Agents &amp; Agentic AI.<br>
+      Every project is a step toward real-world impact.
+    </p>
+    <div class="hero-cta">
+      <a href="https://github.com/Rudra0075-ms" target="_blank" class="btn btn-primary">🐙 GitHub Profile</a>
+      <a href="#projects" class="btn btn-outline">🚀 View Projects</a>
+      <a href="#contact" class="btn btn-outline">📫 Contact Me</a>
+    </div>
+  </section>
 
-<section id="about">
-<h2>About Me</h2>
-<p>
- BTech CSE (AI & ML) student passionate about python, AI agent, Agentic AI and AI tools.
-</p>
-</section>
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="section-label">Who I Am</div>
+    <h2><span class="h2-icon">🚀</span> About Me</h2>
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="label">🎓 Degree</div>
+        <div class="value">B.Tech CSE — AI &amp; ML Specialization (2nd Year)</div>
+      </div>
+      <div class="about-card">
+        <div class="label">💻 Interests</div>
+        <div class="value">Python · Web Dev · Agentic AI · AI Agents</div>
+      </div>
+      <div class="about-card">
+        <div class="label">📚 Currently Learning</div>
+        <div class="value">DSA · LangChain · LangGraph · Machine Learning</div>
+      </div>
+      <div class="about-card">
+        <div class="label">🎯 Goal</div>
+        <div class="value">Aspiring AI Engineer building real-world AI projects</div>
+      </div>
+    </div>
+  </section>
 
-<section id="skills">
-<h2>Skills</h2>
-<ul>
-<li>Python</li>
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="section-label">What I Know</div>
+    <h2><span class="h2-icon">🛠️</span> Skills</h2>
 
-</ul>
-</section>
+    <div class="skills-group">
+      <h3>Programming Languages</h3>
+      <div class="skill-chips">
+        <div class="chip">🐍 Python <span class="chip-level">Intermediate</span></div>
+        <div class="chip">☕ Java <span class="chip-level">Intermediate</span></div>
+        <div class="chip">🔧 C <span class="chip-level">Intermediate</span></div>
+        <div class="chip">🔷 C++ <span class="chip-level">Intermediate</span></div>
+      </div>
+    </div>
 
-<section id="projects">
-<h2>Projects</h2>
-<a href="https://github.com/Rudra0075-ms" target="_blank" style="color:var(--accent)">
-View My GitHub
-</a>
-</section>
+    <div class="skills-group">
+      <h3>Web Development</h3>
+      <div class="skill-chips">
+        <div class="chip">🌐 HTML5 <span class="chip-level">Intermediate</span></div>
+        <div class="chip">🎨 CSS3 <span class="chip-level">Intermediate</span></div>
+        <div class="chip">⚡ JavaScript <span class="chip-level">Intermediate</span></div>
+      </div>
+    </div>
 
-<section id="contact">
-<h2>Contact</h2>
-Email:
-<a href="mailto:msrudra0075@email.com" style="color:var(--accent)">
-msrudra0075@email.com
-</a>
-</section>
+    <div class="skills-group">
+      <h3>AI / ML Tools</h3>
+      <div class="skill-chips">
+        <div class="chip">🦜 LangChain <span class="chip-level">Learning</span></div>
+        <div class="chip">🔗 LangGraph <span class="chip-level">Learning</span></div>
+        <div class="chip">🤖 Gemini API <span class="chip-level">Learning</span></div>
+        <div class="chip">📚 FAISS <span class="chip-level">Learning</span></div>
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <h3>Tools &amp; Database</h3>
+      <div class="skill-chips">
+        <div class="chip">🗂️ Git <span class="chip-level">Version Control</span></div>
+        <div class="chip">🐙 GitHub <span class="chip-level">Repo Hosting</span></div>
+        <div class="chip">💻 VS Code <span class="chip-level">Editor</span></div>
+        <div class="chip">🛢️ MySQL <span class="chip-level">Basic</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="section-label">What I've Built</div>
+    <h2><span class="h2-icon">📂</span> Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="p-icon">🧮</div>
+        <div class="p-title">Age Calculator Program</div>
+        <div class="p-desc">A Python program that calculates exact age in years, months, and days from a birth date.</div>
+        <div class="p-stack">
+          <span class="tag">Python</span>
+        </div>
+        <div class="p-links">
+          <a class="plink" href="https://github.com/Rudra0075-ms/age_calculator" target="_blank">📁 Repo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="p-icon">🌐</div>
+        <div class="p-title">Portfolio Website</div>
+        <div class="p-desc">Personal portfolio showcasing skills, projects &amp; learning journey with an underwater aesthetic.</div>
+        <div class="p-stack">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+        </div>
+        <div class="p-links">
+          <a class="plink" href="https://rudra0075-ms.github.io/portfolio/" target="_blank">🔗 Live</a>
+          <a class="plink" href="https://github.com/Rudra0075-ms/portfolio" target="_blank">📁 Repo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="p-icon">💪</div>
+        <div class="p-title">Fitness Guide Website</div>
+        <div class="p-desc">Helps users maintain a balanced diet and healthy lifestyle with interactive guidance.</div>
+        <div class="p-stack">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+        </div>
+        <div class="p-links">
+          <a class="plink" href="https://rudra0075-ms.github.io/fitness_guide/" target="_blank">🔗 Live</a>
+          <a class="plink" href="https://github.com/Rudra0075-ms/fitness_guide" target="_blank">📁 Repo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="p-icon">🧮</div>
+        <div class="p-title">All-in-One Calculator</div>
+        <div class="p-desc">Supports basic &amp; scientific calculations with a clean, easy-to-use interface.</div>
+        <div class="p-stack">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+        </div>
+        <div class="p-links">
+          <a class="plink" href="https://rudra0075-ms.github.io/All-in-one-Calculator/" target="_blank">🔗 Live</a>
+          <a class="plink" href="https://github.com/Rudra0075-ms/All-in-one-Calculator" target="_blank">📁 Repo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="p-icon">🕒</div>
+        <div class="p-title">Analog Watch</div>
+        <div class="p-desc">Real-time analog clock displaying Indian Standard Time (IST) with a neumorphic dark design.</div>
+        <div class="p-stack">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+        </div>
+        <div class="p-links">
+          <a class="plink" href="https://rudra0075-ms.github.io/analog_watch/" target="_blank">🔗 Live</a>
+          <a class="plink" href="https://github.com/Rudra0075-ms/analog_watch" target="_blank">📁 Repo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="p-icon">🎮</div>
+        <div class="p-title">Memory Card Game</div>
+        <div class="p-desc">Interactive memory game with multiple difficulty levels — a fun test of concentration.</div>
+        <div class="p-stack">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+        </div>
+        <div class="p-links">
+          <a class="plink" href="https://rudra0075-ms.github.io/memory_card_game/" target="_blank">🔗 Live</a>
+          <a class="plink" href="https://github.com/Rudra0075-ms/memory_card_game" target="_blank">📁 Repo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="p-icon">✅</div>
+        <div class="p-title">To-Do List App</div>
+        <div class="p-desc">Task management app to organize and track daily activities efficiently.</div>
+        <div class="p-stack">
+          <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span>
+        </div>
+        <div class="p-links">
+          <a class="plink" href="https://rudra0075-ms.github.io/to-do-list___web/" target="_blank">🔗 Live</a>
+          <a class="plink" href="https://github.com/Rudra0075-ms/to-do-list___web" target="_blank">📁 Repo</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== LEARNING ===== -->
+  <section id="learning">
+    <div class="section-label">What I'm Exploring</div>
+    <h2><span class="h2-icon">📈</span> Currently Learning</h2>
+    <div class="list-rows">
+      <div class="row-item">
+        <span class="r-label">🐍 Advanced Python</span>
+        <span class="badge badge-progress">🔄 In Progress</span>
+      </div>
+      <div class="row-item">
+        <span class="r-label">🧩 Data Structures &amp; Algorithms</span>
+        <span class="badge badge-progress">🔄 In Progress</span>
+      </div>
+      <div class="row-item">
+        <span class="r-label">🤖 Agentic AI &amp; AI Agents</span>
+        <span class="badge badge-progress">🔄 In Progress</span>
+      </div>
+      <div class="row-item">
+        <span class="r-label">🔗 LangChain &amp; LangGraph</span>
+        <span class="badge badge-progress">🔄 In Progress</span>
+      </div>
+      <div class="row-item">
+        <span class="r-label">📊 Machine Learning Fundamentals</span>
+        <span class="badge badge-progress">🔄 In Progress</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GOALS ===== -->
+  <section id="goals">
+    <div class="section-label">Where I'm Headed</div>
+    <h2><span class="h2-icon">🎯</span> Goals for 2026</h2>
+    <div class="list-rows">
+      <div class="row-item">
+        <span class="r-label">🐍 Master Python Programming</span>
+        <span class="badge badge-area">Core Skills</span>
+      </div>
+      <div class="row-item">
+        <span class="r-label">🧩 Strengthen DSA</span>
+        <span class="badge badge-area">Problem Solving</span>
+      </div>
+      <div class="row-item">
+        <span class="r-label">🤖 Build AI Agents with LangChain &amp; LangGraph</span>
+        <span class="badge badge-area">AI / GenAI</span>
+      </div>
+      <div class="row-item">
+        <span class="r-label">🌍 Develop Real-World AI Projects</span>
+        <span class="badge badge-area">Portfolio</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section id="achievements">
+    <div class="section-label">Milestones</div>
+    <h2><span class="h2-icon">🏆</span> Achievements</h2>
+    <div class="achievements-list">
+      <div class="ach-item">
+        <span class="ach-icon">🚀</span>
+        <span class="ach-text">Built 7+ personal web development projects hosted on GitHub Pages</span>
+      </div>
+      <div class="ach-item">
+        <span class="ach-icon">💻</span>
+        <span class="ach-text">Learning by building Python projects consistently — hands-on practice over passive study</span>
+      </div>
+      <div class="ach-item">
+        <span class="ach-icon">🤖</span>
+        <span class="ach-text">Actively learning AI &amp; Machine Learning through real projects like RAG with LangChain &amp; FAISS</span>
+      </div>
+      <div class="ach-item">
+        <span class="ach-icon">💡</span>
+        <span class="ach-text">Consistently improving coding &amp; problem-solving skills with a Python-first focus</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="section-label">Let's Connect</div>
+    <h2><span class="h2-icon">🌐</span> Profiles &amp; Contact</h2>
+    <div class="profiles-grid">
+      <a class="profile-card" href="https://github.com/Rudra0075-ms" target="_blank">
+        <span class="pc-icon">🐙</span>
+        <div class="pc-info">
+          <span class="pc-platform">GitHub</span>
+          <span class="pc-handle">Rudra0075-ms</span>
+        </div>
+      </a>
+      <a class="profile-card" href="https://codolio.com/profile/Rms_007" target="_blank">
+        <span class="pc-icon">📊</span>
+        <div class="pc-info">
+          <span class="pc-platform">Codolio</span>
+          <span class="pc-handle">Rms_007</span>
+        </div>
+      </a>
+      <a class="profile-card" href="mailto:msrudra0075@gmail.com">
+        <span class="pc-icon">📧</span>
+        <div class="pc-info">
+          <span class="pc-platform">Email</span>
+          <span class="pc-handle">msrudra0075@gmail.com</span>
+        </div>
+      </a>
+    </div>
+
+    <br>
+    <div class="funfact-box">
+      <strong>⭐ Fun Fact</strong><br><br>
+      I enjoy building projects, solving coding problems, and exploring new technologies.<br>
+      Every project teaches me something new and helps me grow as a programmer.<br><br>
+      <em style="font-size:.85rem">These projects represent my learning journey and hands-on practice in programming and web development.
+      I'm continuously improving my skills and working toward building impactful real-world projects in AI &amp; Machine Learning.</em>
+    </div>
+  </section>
 
 </main>
 
-<button class="float-btn github-btn" onclick="window.open('https://github.com/Rudra0075-ms','_blank')">🐙</button>
-<button class="float-btn top-btn" onclick="scrollToTop()">⬆</button>
+<footer>
+  Made with 💙 by <a href="https://github.com/Rudra0075-ms" target="_blank">Rudra Madhab Sahoo</a> &nbsp;·&nbsp; 2025
+</footer>
 
-<script>
-/* Typing Effect */
-const texts=[
-"BTech CSE AI & ML Student",
-"Python Developer",
-"Agentic AI",
-"AI Tools Explorer"
-];
-let i=0,j=0,del=false;
-const el=document.getElementById("typing");
+<!-- Float Buttons -->
+<button class="float-btn github-btn" title="GitHub" onclick="window.open('https://github.com/Rudra0075-ms','_blank')">🐙</button>
+<button class="float-btn top-btn" title="Back to top" onclick="scrollToTop()">⬆</button>
 
-function type(){
-    if(!del && j<=texts[i].length){
-        el.textContent=texts[i].substring(0,j++);
-    }else if(del && j>=0){
-        el.textContent=texts[i].substring(0,j--);
-    }
-    if(j===texts[i].length+1) del=true;
-    if(j===0 && del){
-        del=false;
-        i=(i+1)%texts.length;
-    }
-    setTimeout(type,del?40:80);
-}
-type();
-
-/* Reveal Animation */
-const sections=document.querySelectorAll("section");
-window.addEventListener("scroll",()=>{
-    const trigger=window.innerHeight*0.85;
-    sections.forEach(sec=>{
-        if(sec.getBoundingClientRect().top<trigger){
-            sec.classList.add("visible");
-        }
-    });
-});
-
-/* Scroll Top */
-function scrollToTop(){
-    window.scrollTo({top:0,behavior:"smooth"});
-}
-
-/* Bubble Generator */
-const container=document.getElementById("bubbles");
-function createBubble(){
-    const b=document.createElement("div");
-    b.className="bubble";
-    const size=Math.random()*18+6;
-    b.style.width=size+"px";
-    b.style.height=size+"px";
-    b.style.left=Math.random()*100+"vw";
-    b.style.animationDuration=(Math.random()*7+6)+"s";
-    container.appendChild(b);
-    setTimeout(()=>b.remove(),13000);
-}
-setInterval(createBubble,350);
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
