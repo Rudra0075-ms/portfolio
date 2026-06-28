@@ -101,8 +101,9 @@
 
 | Achievement |
 |---|
-| 🚀 Built 6+ personal web development websites |
 | 💻 Learning by building Python projects consistently |
+| 🚀 Built 6+ personal web development websites |
+| ⭐ Currently pursuing the Google AI-ML Virtual Internship through Eduskills |
 | 🤖 Actively learning AI & Machine Learning |
 | 💡 Consistently improving coding & problem-solving skills |
 
