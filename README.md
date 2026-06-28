@@ -51,6 +51,18 @@
 
 ---
 
+## 📂REAL TIME PROJECTS
+
+| # | Project | Tech Stack | Description | Links |
+|---|---|---|---|---|
+| 1 | coming soon |
+
+---
+
+
+
+---
+
 ## 📂 Python Projects
 
 | # | Project | Tech Stack | Description | Links |
