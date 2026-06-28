@@ -397,7 +397,7 @@ h2 .h2-icon { font-size: 1.3rem; }
   margin-left: .2rem;
 }
 
-/* ================= PROJECTS ================= */
+/* ================= PROJECTS (Web Dev) ================= */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -470,6 +470,90 @@ h2 .h2-icon { font-size: 1.3rem; }
 }
 
 .plink:hover { background: rgba(78,168,255,0.22); }
+
+/* ================= PROJECTS (Python) ================= */
+.projects2-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.2rem;
+}
+
+.project-card2 {
+  background: rgba(0,0,0,0.3);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.4rem;
+  transition: .35s;
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}
+
+.project-card2:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  box-shadow: 0 0 22px var(--accent-glow);
+}
+
+.project-card2 .p-icon { font-size: 1.6rem; }
+
+.project-card2 .p-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.project-card2 .p-desc {
+  font-size: .83rem;
+  color: var(--gray);
+  line-height: 1.55;
+  flex: 1;
+}
+
+.project-card2 .p-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+}
+
+.project-card2 .tag {
+  background: rgba(78,168,255,0.12);
+  border: 1px solid rgba(78,168,255,0.25);
+  border-radius: 10px;
+  padding: .18rem .6rem;
+  font-size: .72rem;
+  color: var(--accent);
+}
+
+.project-card2 .p-links {
+  display: flex;
+  gap: .6rem;
+  flex-wrap: wrap;
+}
+
+.project-card2 .plink {
+  text-decoration: none;
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: rgba(78,168,255,0.1);
+  border: 1px solid rgba(78,168,255,0.25);
+  border-radius: 8px;
+  padding: .25rem .7rem;
+  transition: .25s;
+}
+
+.project-card2 .plink:hover { background: rgba(78,168,255,0.22); }
+
+.project-card2 .plink.repo {
+  color: var(--accent2);
+  background: rgba(56,217,169,0.08);
+  border-color: rgba(56,217,169,0.3);
+}
+
+.project-card2 .plink.repo:hover {
+  background: rgba(56,217,169,0.18);
+}
 
 /* ================= LEARNING & GOALS ================= */
 .list-rows {
@@ -647,8 +731,5 @@ footer a { color: var(--accent); text-decoration: none; }
   main { padding: 7rem 1rem 3rem; }
   section { padding: 1.5rem 1.2rem; }
   .projects-grid { grid-template-columns: 1fr; }
+  .projects2-grid { grid-template-columns: 1fr; }
 }
-
-
-
-
