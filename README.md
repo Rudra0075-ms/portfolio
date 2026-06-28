@@ -24,14 +24,14 @@
 | 🐍 Python | Intermediate |
 | ☕ Java | Intermediate |
 | 🔧 C | Intermediate |
-
+| C++ | Basic |
 ### Web Development
 
 | Technology | Level |
 |---|---|
-| 🌐 HTML | Intermediate |
-| 🎨 CSS | Intermediate |
-| ⚡ JavaScript | Intermediate |
+| 🌐 HTML | Basic |
+| 🎨 CSS | Basic |
+| ⚡ JavaScript | Basic |
 
 ### Tools & Technologies
 
