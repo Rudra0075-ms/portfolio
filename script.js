@@ -5,7 +5,7 @@
 /* ===== TYPING EFFECT ===== */
 const texts = [
   "BTech CSE AI & ML Student",
-  "Python Developer",
+  "Python Coder",
   "Agentic AI Explorer",
   "AI Tools Builder",
   "Aspiring AI Engineer"
