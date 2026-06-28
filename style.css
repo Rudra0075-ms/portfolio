@@ -648,3 +648,4 @@ footer a { color: var(--accent); text-decoration: none; }
   section { padding: 1.5rem 1.2rem; }
   .projects-grid { grid-template-columns: 1fr; }
 }
+
