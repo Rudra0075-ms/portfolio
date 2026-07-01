@@ -68,7 +68,7 @@
 | # | Project | Tech Stack | Description | Links |
 |---|---|---|---|---|
 | 1 | 🧮 **Age Calculator Program** | Python | A simple Python program that calculates a person's exact age in years, months, and days based on their birth date. | [Repo](https://github.com/Rudra0075-ms/age_calculator) |
-
+| 2 | 💱 **Currency Converter Program** | Python | A simple Python project that converts one currency to another using real-time exchange rates from the CurrencyAPI. | [Repo](https://github.com/Rudra0075-ms/currency_converter) |
 ---
 
 ---
