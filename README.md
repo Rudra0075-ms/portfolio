@@ -41,6 +41,7 @@
 | 🐙 GitHub | Repository Hosting |
 | 💻 VS Code | Code Editor |
 | 🧪 Antigravity IDE | Code Editor |
+| Google Colab | Code Editor |
 
 ### Database
 
