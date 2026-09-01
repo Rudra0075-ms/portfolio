@@ -631,3 +631,254 @@ footer {
 .about-facts > div:hover,.journey-grid li:hover{padding-left:8px;border-color:var(--accent)}
 .contact-box{transition:border-color .2s ease}
 .contact-box:hover{border-color:var(--accent)}
+
+
+/* ===== FULL INTERACTION / HOVER SYSTEM ===== */
+
+.nav-links a,
+.brand,
+.nav-toggle,
+.hero-photo,
+.photo-placeholder,
+.btn,
+.social-links a,
+.about-facts > div,
+.chips span,
+.tags span,
+.featured-project,
+.project-card,
+.project-card h3,
+.project-card p,
+.project-card a,
+.project-links a,
+.journey-grid li,
+.journey-grid li span,
+.milestones p,
+.email-link,
+.contact-links a {
+  transition: all .22s ease;
+}
+
+/* Header + navigation */
+.brand:hover {
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.nav-links a {
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 0;
+  height: 2px;
+  background: var(--accent);
+  transition: width .22s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--text);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.nav-toggle:hover {
+  border-color: var(--accent);
+  background: #202631;
+  transform: translateY(-2px);
+}
+
+/* Hero */
+.hero-photo:hover {
+  transform: translateY(-6px) scale(1.015);
+  border-color: var(--accent);
+  box-shadow: 0 16px 35px rgba(0,0,0,.32);
+}
+
+.photo-placeholder:hover {
+  color: var(--text);
+  background: #20252e;
+}
+
+.photo-icon {
+  transition: all .22s ease;
+}
+
+.photo-placeholder:hover .photo-icon {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: rotate(90deg);
+}
+
+.eyebrow {
+  transition: transform .22s ease, letter-spacing .22s ease;
+}
+
+.eyebrow:hover {
+  transform: translateX(4px);
+  letter-spacing: .16em;
+}
+
+/* Buttons */
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,.3);
+}
+
+.btn-dark:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.btn-light:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* Social/contact links */
+.social-links a:hover,
+.project-card a:hover,
+.contact-links a:hover {
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.email-link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  transform: translateX(4px);
+}
+
+/* About facts */
+.about-facts > div:hover {
+  padding-left: 10px;
+  border-color: var(--accent);
+  background: rgba(109,140,255,.06);
+}
+
+.about-facts > div:hover strong {
+  color: var(--accent);
+}
+
+/* Skill chips + project tags */
+.chips span:hover,
+.tags span:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  background: #252b36;
+  color: var(--text);
+  box-shadow: 0 5px 14px rgba(0,0,0,.2);
+}
+
+.chips span:hover small {
+  color: #c4c9d2;
+}
+
+/* Featured project */
+.featured-project:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  background: #1c212a;
+  box-shadow: 0 16px 32px rgba(0,0,0,.25);
+}
+
+.featured-project:hover .project-label,
+.featured-project:hover .coming-soon {
+  color: var(--accent);
+}
+
+/* Every project card */
+.project-card {
+  cursor: default;
+}
+
+.project-card:hover {
+  transform: translateY(-7px);
+  border-color: var(--accent);
+  background: #20252e;
+  box-shadow: 0 16px 32px rgba(0,0,0,.28);
+}
+
+.project-card:hover h3 {
+  color: var(--accent);
+  transform: translateX(3px);
+}
+
+.project-card:hover p {
+  color: #c0c5ce;
+}
+
+.project-card:hover .project-number {
+  color: var(--accent);
+  transform: translateX(3px);
+}
+
+/* Journey rows */
+.journey-grid li:hover {
+  padding-left: 10px;
+  padding-right: 6px;
+  border-color: var(--accent);
+  background: rgba(109,140,255,.05);
+}
+
+.journey-grid li:hover span {
+  color: var(--accent);
+}
+
+/* Milestone text */
+.milestones p {
+  transition: all .22s ease;
+}
+
+.milestones p:hover {
+  padding-left: 8px;
+  color: var(--text);
+  transform: translateX(3px);
+}
+
+/* Contact */
+.contact-box {
+  transition: border-color .22s ease, transform .22s ease;
+}
+
+.contact-box:hover {
+  border-color: var(--accent);
+}
+
+/* Footer */
+footer span {
+  transition: color .22s ease, transform .22s ease;
+}
+
+footer span:hover {
+  color: var(--text);
+  transform: translateY(-2px);
+}
+
+/* Keyboard accessibility */
+a:focus-visible,
+button:focus-visible,
+.chips span:focus-visible,
+.tags span:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+/* Mobile menu item hover */
+@media (max-width: 680px) {
+  .nav-links a:hover {
+    background: #252b36;
+    border-radius: 7px;
+    padding-left: 15px;
+  }
+}
