@@ -1,14 +1,14 @@
 /* Clean portfolio — minimal, spacious, developer-focused */
 
 :root {
-  --bg: #ffffff;
-  --surface: #f6f7f9;
-  --card: #ffffff;
-  --text: #17191d;
-  --muted: #686d76;
-  --line: #e3e5e8;
-  --accent: #315efb;
-  --dark: #17191d;
+  --bg: #111318;
+  --surface: #181b22;
+  --card: #1d2129;
+  --text: #f1f3f5;
+  --muted: #a4aab5;
+  --line: #303640;
+  --accent: #6d8cff;
+  --dark: #f1f3f5;
   --max: 1120px;
   --radius: 14px;
 }
@@ -36,7 +36,7 @@ a { color: inherit; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(255,255,255,.94);
+  background: rgba(17,19,24,.94);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(10px);
 }
@@ -135,7 +135,7 @@ a { color: inherit; }
   height: 44px;
   display: grid;
   place-items: center;
-  border: 1px dashed #b8bdc5;
+  border: 1px dashed #4a5260;
   border-radius: 50%;
   font-size: 1.5rem;
   font-weight: 300;
@@ -208,8 +208,8 @@ a { color: inherit; }
 
 .btn:hover { transform: translateY(-2px); }
 
-.btn-dark { background: var(--dark); color: #fff; }
-.btn-light { background: #fff; color: var(--text); border-color: var(--line); }
+.btn-dark { background: var(--dark); color: #111318; }
+.btn-light { background: var(--surface); color: var(--text); border-color: var(--line); }
 
 .social-links {
   display: flex;
@@ -407,12 +407,12 @@ a { color: inherit; }
 }
 
 .project-card:hover {
-  border-color: #aeb3bb;
+  border-color: var(--accent);
   transform: translateY(-3px);
 }
 
 .project-number {
-  color: #a0a5ad;
+  color: #737b89;
   font-family: "JetBrains Mono", monospace;
   font-size: .68rem;
   margin-bottom: 27px;
@@ -555,7 +555,7 @@ footer {
     flex-direction: column;
     align-items: stretch;
     gap: 0;
-    background: #fff;
+    background: var(--surface);
     border: 1px solid var(--line);
     border-radius: 10px;
   }
@@ -604,3 +604,30 @@ footer {
   footer { display: block; }
   footer span + span { display: block; margin-top: 5px; }
 }
+
+
+/* Subtle hover interactions */
+.nav-links a{position:relative;transition:color .2s ease,transform .2s ease}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-7px;width:0;height:2px;background:var(--accent);transition:width .2s ease}
+.nav-links a:hover{color:var(--text);transform:translateY(-1px)}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.btn{transition:transform .2s ease,background .2s ease,color .2s ease,border-color .2s ease,box-shadow .2s ease}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.btn-dark:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn-light:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+.hero-photo{transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.hero-photo:hover{transform:translateY(-5px);border-color:var(--accent);box-shadow:0 14px 35px rgba(0,0,0,.3)}
+.chips span,.tags span{transition:transform .2s ease,border-color .2s ease,background .2s ease,color .2s ease}
+.chips span:hover,.tags span:hover{transform:translateY(-2px);border-color:var(--accent);background:#252b36}
+.project-card{transition:border-color .25s ease,transform .25s ease,background .25s ease,box-shadow .25s ease}
+.project-card:hover{border-color:var(--accent);background:#20252e;transform:translateY(-6px);box-shadow:0 14px 30px rgba(0,0,0,.25)}
+.project-card:hover .project-number{color:var(--accent)}
+.featured-project{transition:transform .25s ease,border-color .25s ease,background .25s ease,box-shadow .25s ease}
+.featured-project:hover{transform:translateY(-4px);border-color:var(--accent);background:#1b1f27;box-shadow:0 14px 30px rgba(0,0,0,.22)}
+.social-links a,.project-card a,.contact-links a,.email-link{transition:color .2s ease,border-color .2s ease,transform .2s ease}
+.social-links a:hover,.project-card a:hover,.contact-links a:hover{color:var(--accent);transform:translateY(-1px)}
+.email-link:hover{color:var(--accent);border-color:var(--accent)}
+.about-facts > div,.journey-grid li{transition:padding-left .2s ease,border-color .2s ease}
+.about-facts > div:hover,.journey-grid li:hover{padding-left:8px;border-color:var(--accent)}
+.contact-box{transition:border-color .2s ease}
+.contact-box:hover{border-color:var(--accent)}
