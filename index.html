@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rudra Madhab Sahoo — B.Tech CSE AI & ML student, Python developer and aspiring AI engineer.">
+  <meta name="author" content="Rudra Madhab Sahoo">
+  <title>Rudra Madhab Sahoo | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* =========================
+       HEADER LOGO
+    ========================== */
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      background: linear-gradient(
+        135deg,
+        var(--primary, #6366f1),
+        var(--accent, #a855f7)
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    .brand-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+    }
+
+    /* Small social icons beside the logo */
+    .brand-social-circle {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .brand-social-circle a {
+      width: 25px;
+      height: 25px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: transparent;
+      color: var(--text-main, #374151);
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.2s ease, color 0.2s ease,
+                  border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .brand-social-circle a:hover {
+      transform: translateY(-2px);
+      color: var(--accent, #6366f1);
+      border-color: currentColor;
+      background: rgba(99, 102, 241, 0.06);
+    }
+
+    /* =========================
+       HERO SOCIAL ICONS
+    ========================== */
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 28px;
+      margin: 30px 0 24px;
+    }
+
+    .social-links .social {
+      width: 58px;
+      height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.35);
+      border: 1px solid rgba(17, 24, 39, 0.16);
+      color: var(--text-main, #374151);
+      text-decoration: none;
+      box-sizing: border-box;
+      transition:
+        transform 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease;
+    }
+
+    .social-links .social svg {
+      width: 25px;
+      height: 25px;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .social-links .social:hover {
+      transform: translateY(-6px) scale(1.05);
+      background: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+    }
+
+    .social-links .social:hover svg {
+      transform: scale(1.08);
+    }
+
+    .social-links .github:hover {
+      color: #181717;
+      border-color: #181717;
+    }
+
+    .social-links .linkedin:hover {
+      color: #0a66c2;
+      border-color: #0a66c2;
+    }
+
+    .social-links .codolio:hover {
+      color: #7c3aed;
+      border-color: #7c3aed;
+    }
+
+    /* Accessible text hidden visually */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* Dark theme */
+    body.dark .brand-social-circle a {
+      color: #e5e7eb;
+      border-color: rgba(255, 255, 255, 0.18);
+    }
+
+    body.dark .social-links .social {
+      background: rgba(255, 255, 255, 0.04);
+      border-color: rgba(255, 255, 255, 0.18);
+      color: #e5e7eb;
+    }
+
+    body.dark .social-links .social:hover {
+      background: rgba(255, 255, 255, 0.09);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    body.dark .social-links .github:hover {
+      color: #ffffff;
+      border-color: #ffffff;
+    }
+
+    body.dark .social-links .linkedin:hover {
+      color: #0a66c2;
+      border-color: #0a66c2;
+    }
+
+    body.dark .social-links .codolio:hover {
+      color: #a78bfa;
+      border-color: #a78bfa;
+    }
+
+    @media (max-width: 480px) {
+      .social-links {
+        gap: 20px;
+      }
+
+      .social-links .social {
+        width: 52px;
+        height: 52px;
+      }
+
+      .social-links .social svg {
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="brand-wrapper">
+        <a class="logo" href="index.html">Rudra</a>
+        <div class="brand-social-circle">
+          <a href="https://github.com/Rudra0075-ms" target="_blank" rel="noopener" title="GitHub">GH</a>
+          <a href="https://www.linkedin.com/in/rudra-madhab-sahoo-b4b097367/" target="_blank" rel="noopener" title="LinkedIn">IN</a>
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="skills.html">Skills</a>
+          <a href="certification.html">Certifications</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-card">
+        <p class="hero-role-label">B.Tech CSE · AI & ML</p>
+        <h1 class="hero-title">Hi, I'm <span>Rudra Madhab Sahoo.</span></h1>
+        <h2 class="hero-role"><span id="typed-text"></span><span class="cursor">|</span></h2>
+
+        <p class="hero-subtitle">
+          I build practical projects with Python and the web while exploring
+          AI agents, machine learning and backend development.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="mailto:sahoorudramadhab2007@gmail.com" class="btn">Contact Me</a>
+        </div>
+
+        <!-- =========================
+             SOCIAL LINKS
+        ========================== -->
+        <div class="social-links" aria-label="Social links">
+
+          <!-- GitHub -->
+          <a
+            href="https://github.com/Rudra0075-ms"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social github"
+            aria-label="GitHub"
+            title="GitHub"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M12 .5C5.65.5.5 5.66.5 12c0 5.08 3.29 9.39 7.85 10.91.57.1.78-.25.78-.55
+                0-.27-.01-1.16-.02-2.1-3.19.69-3.86-1.35-3.86-1.35-.52-1.33-1.27-1.68-1.27-1.68
+                -1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.33.95
+                .1-.74.4-1.24.73-1.52-2.55-.29-5.23-1.28-5.23-5.69 0-1.26.45-2.29 1.18-3.1
+                -.12-.29-.51-1.47.11-3.06 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0
+                c2.19-1.49 3.15-1.18 3.15-1.18.62 1.59.23 2.77.11 3.06.74.81 1.18 1.84 1.18 3.1
+                0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.07.78 2.16 0 1.56-.01 2.81-.01 3.19
+                0 .3.2.66.79.55A11.51 11.51 0 0 0 23.5 12C23.5 5.66 18.35.5 12 .5Z"
+              />
+            </svg>
+            <span class="sr-only">GitHub</span>
+          </a>
+
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/rudra-madhab-sahoo-b4b097367/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social linkedin"
+            aria-label="LinkedIn"
+            title="LinkedIn"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04
+                -1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.99h3.42v1.56h.05
+                c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29ZM5.32
+                7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM3.54
+                20.45h3.56V8.99H3.54v11.46ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56
+                C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.28V1.72
+                C24 .77 23.2 0 22.22 0Z"
+              />
+            </svg>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+
+          <!-- Codolio -->
+          <a
+            href="https://codolio.com/profile/Rms_007"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social codolio"
+            aria-label="Codolio"
+            title="Codolio"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle
+                cx="12"
+                cy="12"
+                r="9"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <path
+                d="M15.5 7.8a5.2 5.2 0 1 0 0 8.4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <circle cx="17.5" cy="7" r="1.2" fill="currentColor"/>
+              <circle cx="17.5" cy="17" r="1.2" fill="currentColor"/>
+            </svg>
+            <span class="sr-only">Codolio</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <h2 class="section-title">About Me</h2>
+      <a href="about.html" class="about-card-link">
+        <div class="about-card card">
+          <h3>A developer who learns by building.</h3>
+          <p>
+            I'm a second-year <strong>B.Tech CSE (AI & ML)</strong> student based in
+            Odisha, India. I'm most comfortable with <strong>Python</strong> and I'm
+            currently going deeper into AI agents, LangChain, LangGraph and machine learning.
+          </p>
+          <p>
+            I prefer hands-on learning: build something, break it, understand why,
+            and improve it.
+          </p>
+          <span class="card-link-text"><i>Read full profile →</i></span>
+        </div>
+      </a>
+    </section>
+
+    <section id="skills" class="section reveal">
+      <h2 class="section-title">Skills</h2>
+      <div class="grid">
+        <a href="skills.html" class="card card-link"><strong>Python</strong><span>(Intermediate)</span></a>
+        <a href="skills.html" class="card card-link"><strong>Java</strong><span>(Intermediate)</span></a>
+        <a href="skills.html" class="card card-link"><strong>Web Development</strong><span>HTML5 ·<br> CSS3 ·<br> JavaScript</span></a>
+        <a href="skills.html" class="card card-link"><strong>AI / ML</strong><span>LangChain · LangGraph · CrewAI</span></a>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <h2 class="section-title">Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-content">
+            <span class="project-number">01</span>
+            <h3>Age Calculator</h3>
+            <p>Calculates exact age in years, months and days from a birth date.</p>
+            <div class="project-tags"><span>Python</span></div>
+            <a href="https://github.com/Rudra0075-ms/age_calculator" target="_blank" rel="noopener">View Repository ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-content">
+            <span class="project-number">02</span>
+            <h3>Currency Converter</h3>
+            <p>Converts currencies using real-time exchange rates from CurrencyAPI.</p>
+            <div class="project-tags"><span>Python</span></div>
+            <a href="https://github.com/Rudra0075-ms/currency_converter" target="_blank" rel="noopener">View Repository ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-content">
+            <span class="project-number">03</span>
+            <h3>Pounds → Kilograms</h3>
+            <p>A simple weight conversion program from pounds to kilograms.</p>
+            <div class="project-tags"><span>Python</span></div>
+            <a href="https://github.com/Rudra0075-ms/pounds_to_kg_converter" target="_blank" rel="noopener">View Repository ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-content">
+            <span class="project-number">04</span>
+            <h3>Portfolio Website</h3>
+            <p>Personal portfolio showcasing skills, projects and learning journey.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <div class="project-links">
+              <a href="https://rudra0075-ms.github.io/portfolio/" target="_blank" rel="noopener">Live ↗</a>
+              <a href="https://github.com/Rudra0075-ms/portfolio" target="_blank" rel="noopener">Repo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-content">
+            <span class="project-number">05</span>
+            <h3>Fitness Guide</h3>
+            <p>Interactive website for balanced diet and healthy lifestyle guidance.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <div class="project-links">
+              <a href="https://rudra0075-ms.github.io/fitness_guide/" target="_blank" rel="noopener">Live ↗</a>
+              <a href="https://github.com/Rudra0075-ms/fitness_guide" target="_blank" rel="noopener">Repo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-content">
+            <span class="project-number">06</span>
+            <h3>All-in-One Calculator</h3>
+            <p>Basic and scientific calculations in a clean interface.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <div class="project-links">
+              <a href="https://rudra0075-ms.github.io/All-in-one-Calculator/" target="_blank" rel="noopener">Live ↗</a>
+              <a href="https://github.com/Rudra0075-ms/All-in-one-Calculator" target="_blank" rel="noopener">Repo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-content">
+            <span class="project-number">07</span>
+            <h3>Analog Watch</h3>
+            <p>Real-time analog clock showing Indian Standard Time.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <div class="project-links">
+              <a href="https://rudra0075-ms.github.io/analog_watch/" target="_blank" rel="noopener">Live ↗</a>
+              <a href="https://github.com/Rudra0075-ms/analog_watch" target="_blank" rel="noopener">Repo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-content">
+            <span class="project-number">08</span>
+            <h3>Memory Card Game</h3>
+            <p>Interactive memory game with multiple difficulty levels.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <div class="project-links">
+              <a href="https://rudra0075-ms.github.io/memory_card_game/" target="_blank" rel="noopener">Live ↗</a>
+              <a href="https://github.com/Rudra0075-ms/memory_card_game" target="_blank" rel="noopener">Repo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-content">
+            <span class="project-number">09</span>
+            <h3>To-Do List App</h3>
+            <p>Task management app for organizing and tracking daily activities.</p>
+            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+            <div class="project-links">
+              <a href="https://rudra0075-ms.github.io/to-do-list___web/" target="_blank" rel="noopener">Live ↗</a>
+              <a href="https://github.com/Rudra0075-ms/to-do-list___web" target="_blank" rel="noopener">Repo ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="featured-project card">
+        <span class="project-label">Currently Building</span>
+        <h3>Real-world AI Agent</h3>
+        <p>Exploring retrieval, memory and tools with Python, LangChain, LangGraph, RAG and VectorDB.</p>
+        <div class="project-tags"><span>Python</span><span>LangChain</span><span>LangGraph</span><span>RAG</span><span>VectorDB</span></div>
+        <span class="coming-soon">Coming soon</span>
+      </div>
+    </section>
+
+    <section id="journey" class="section reveal">
+      <h2 class="section-title">Learning Journey</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Currently Learning</h3>
+          <ul class="detail-list">
+            <li>Advanced Python <span>(Almost)</span></li>
+            <li>Data Structures & Algorithms <span>(In progress)</span></li>
+            <li>Agentic AI & AI Agents <span>(In progress)</span></li>
+            <li>LangChain & LangGraph <span>(In progress)</span></li>
+            <li>Machine Learning fundamentals <span>(In progress)</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Goals for 2026</h3>
+          <ul class="detail-list">
+            <li>Master Python programming <span>(Core skills)</span></li>
+            <li>Strengthen DSA <span>(Problem solving)</span></li>
+            <li>Build agents with LangChain & LangGraph <span>(GenAI)</span></li>
+            <li>Ship real-world AI projects <span>(Portfolio)</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section reveal">
+  <div class="contact-container">
+
+    <div class="contact-intro">
+      <span class="section-kicker">GET IN TOUCH</span>
+      <h2>Let's build something useful.</h2>
+      <p>
+        I'm open to internships, collaborations and conversations about
+        AI, software development and practical projects.
+      </p>
+
+      <a
+        class="contact-email"
+        href="mailto:sahoorudramadhab2007@gmail.com"
+      >
+        <span class="contact-email-label">Email me</span>
+        <span class="contact-email-address">sahoorudramadhab2007@gmail.com</span>
+      </a>
+    </div>
+
+    <div class="contact-panel">
+
+      <a
+        href="https://github.com/Rudra0075-ms"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contact-item"
+      >
+        <span class="contact-icon github-icon">GH</span>
+        <span>
+          <strong>GitHub</strong>
+          <small>Projects & source code</small>
+        </span>
+        <span class="contact-arrow">↗</span>
+      </a>
+
+      <a
+        href="https://www.linkedin.com/in/rudra-madhab-sahoo-b4b097367/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contact-item"
+      >
+        <span class="contact-icon linkedin-icon">in</span>
+        <span>
+          <strong>LinkedIn</strong>
+          <small>Connect professionally</small>
+        </span>
+        <span class="contact-arrow">↗</span>
+      </a>
+
+      <a
+        href="https://codolio.com/profile/Rms_007"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contact-item"
+      >
+        <span class="contact-icon codolio-icon">C</span>
+        <span>
+          <strong>Codolio</strong>
+          <small>Problem solving profile</small>
+        </span>
+        <span class="contact-arrow">↗</span>
+      </a>
+
+      <a
+        href="https://me.developers.google.com/u/rudramadhabsahoogita"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contact-item"
+      >
+        <span class="contact-icon google-icon">G</span>
+        <span>
+          <strong>Google Developer Program</strong>
+          <small>Developer profile</small>
+        </span>
+        <span class="contact-arrow">↗</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+</main>
+
+  <footer class="footer">
+  <div class="footer-inner">
+    <a href="index.html" class="footer-logo">Rudra.</a>
+    <p>Built with HTML, CSS & JavaScript · <span id="year"></span></p>
+    <a href="#contact" class="footer-top">Back to top ↑</a>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
