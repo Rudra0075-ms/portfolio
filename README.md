@@ -1,4 +1,4 @@
-# 👋 Hi, I'm Rudra Madhab Sahoo
+# 👋 Hi, I'm Rudra Madhab Sahoo.
 
 > 🎓 2nd Year B.Tech CSE (AI & ML) | 🚀 Aspiring AI Engineer | 📍 Odisha, India
 
