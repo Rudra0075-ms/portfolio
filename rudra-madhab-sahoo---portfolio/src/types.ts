@@ -40,6 +40,7 @@ export interface Certification {
   tags: string[];
   documentUrl: string | null;
   isPdf: boolean;
+  downloadFileName?: string;
   highlight: string;
   skillsLearned: string[];
 }
