@@ -11,7 +11,6 @@ export const profileData: ProfileData = {
   location: 'Bhubaneswar, Odisha, India',
   email: 'sahoorudramadhab2007@gmail.com',
   phone: '+91 78478 98352',
-  secondaryEmail: 'msrudra0075@gmail.com',
   socials: {
     github: 'https://github.com/Rudra0075-ms',
     linkedin: 'https://www.linkedin.com/in/rudra-madhab-sahoo-rms007/',
@@ -106,7 +105,7 @@ export const projectsData: Project[] = [
     fullDescription: 'Built a full-stack student management application using Django, SQLite and frontend technologies. The application includes session-based user authentication, student CRUD operations, search, sorting, pagination, server-side validation and CSRF protection.',
     technologies: ['Python', 'Django', 'SQLite', 'Django ORM', 'HTML5', 'CSS3', 'Bootstrap'],
     githubUrl: 'https://github.com/Rudra0075-ms/Student_Management_System',
-    liveUrl: 'https://student-management-system-inky.vercel.app/',
+    liveUrl: null,
     status: 'completed',
     highlights: 'Backend-focused project with authentication and database operations',
     features: ['User signup, login and logout', 'Protected application pages and session-based authentication', 'Create, view, update and delete student records', 'Search, sorting and pagination', 'Django ORM, server-side validation and CSRF protection']
