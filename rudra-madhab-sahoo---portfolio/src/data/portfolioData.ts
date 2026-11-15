@@ -237,8 +237,9 @@ export const certificationsData: Certification[] = [
     type: 'Virtual Internship · Aug 2026 – Oct 2026',
     description: 'Completed an 8-week structured virtual internship covering full-stack Python web development. Built a Django Student Management System using authentication, CRUD operations, search, sorting, pagination, Django ORM and SQLite.',
     tags: ['Python', 'Django', 'SQLite', 'HTML5', 'CSS3', 'JavaScript', 'Bootstrap'],
-    documentUrl: 'https://github.com/Rudra0075-ms/Student_Management_System',
-    isPdf: false,
+    documentUrl: '/certificates/python-full-stack-internship.pdf',
+    isPdf: true,
+    downloadFileName: 'Rudra-Madhab-Sahoo-Python-Full-Stack-Internship.pdf',
     highlight: '8-week remote virtual internship completed',
     skillsLearned: ['Django application development and MVT fundamentals', 'Authentication, CRUD workflows and ORM-backed data management', 'Frontend integration with HTML, CSS, JavaScript and Bootstrap']
   },
@@ -249,8 +250,9 @@ export const certificationsData: Certification[] = [
     type: 'Virtual Internship · Sep 2026',
     description: 'Completed Python programming internship tasks by developing a Hangman game and an Email Extractor. Received a Letter of Recommendation.',
     tags: ['Python', 'Loops', 'Conditional Logic', 'Regular Expressions', 'File Handling'],
-    documentUrl: 'https://github.com/Rudra0075-ms/CodeAlpha_HangmanGame',
-    isPdf: false,
+    documentUrl: '/certificates/codealpha-python-internship.pdf',
+    isPdf: true,
+    downloadFileName: 'Rudra-Madhab-Sahoo-CodeAlpha-Python-Internship.pdf',
     highlight: 'Completed internship projects and received a Letter of Recommendation',
     skillsLearned: ['Built a console-based Hangman game', 'Developed an email extraction script using regex and file handling', 'Documented and published project source code on GitHub']
   },
@@ -273,8 +275,9 @@ export const certificationsData: Certification[] = [
     type: 'Certificate · Jan 2026',
     description: 'Completed the Programming with C course.',
     tags: ['C', 'Programming Fundamentals'],
-    documentUrl: null,
-    isPdf: false,
+    documentUrl: '/certificates/programming-with-c.pdf',
+    isPdf: true,
+    downloadFileName: 'Rudra-Madhab-Sahoo-Programming-with-C-Coursera.pdf',
     highlight: 'Course completion certificate',
     skillsLearned: ['C programming fundamentals']
   },
@@ -285,8 +288,9 @@ export const certificationsData: Certification[] = [
     type: 'Recognition · Aug 2026',
     description: 'Selected as a CampusCrew Priority Member.',
     tags: ['Campus Community', 'Recognition'],
-    documentUrl: null,
-    isPdf: false,
+    documentUrl: '/certificates/campuscrew-priority-member.pdf',
+    isPdf: true,
+    downloadFileName: 'Rudra-Madhab-Sahoo-CampusCrew-Priority-Member.pdf',
     highlight: 'CampusCrew Priority Member selection',
     skillsLearned: ['Student community participation']
   }
