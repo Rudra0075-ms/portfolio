@@ -20,7 +20,7 @@ export const Hero: React.FC = () => {
   const roles = [
     'Python Developer',
     'Django Backend Developer',
-    'Full-Stack Python Intern',
+    'Backend & Web Developer',
     'AI & ML Learner'
   ];
 
