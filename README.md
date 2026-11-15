@@ -6,6 +6,8 @@
 > Bhubaneswar, Odisha, India
 
 🌐 **Portfolio:** [madhab.dpdns.org](https://madhab.dpdns.org/)  
+📄 **Resume:** Use the **Resume** button in the portfolio navigation to download the latest PDF. The downloadable file is served from `rudra-madhab-sahoo---portfolio/public/resume.pdf` (keep this file updated whenever the resume changes).  
+
 💼 **LinkedIn:** [Rudra Madhab Sahoo](https://www.linkedin.com/in/rudra-madhab-sahoo-rms007/)  
 🐙 **GitHub:** [Rudra0075-ms](https://github.com/Rudra0075-ms)  
 ✉️ **Email:** [sahoorudramadhab2007@gmail.com](mailto:sahoorudramadhab2007@gmail.com)
@@ -29,6 +31,13 @@ I am seeking internship opportunities in Python Development, Backend Engineering
 | Computer Vision | OpenCV, face recognition |
 | Database | SQLite, relational database fundamentals |
 | Tools | Git, GitHub, VS Code |
+
+
+## Portfolio interactions
+
+- Responsive navigation with a direct resume-download action (desktop and mobile).
+- Project cards with animated preview zoom, spotlight/tilt interaction, gradient hover treatment, technology-chip feedback and quick links to source code or live demos.
+- Project filters and a details modal for exploring individual projects.
 
 ## Featured projects
 
