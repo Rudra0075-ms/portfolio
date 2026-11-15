@@ -1,5 +1,7 @@
 # Rudra Madhab Sahoo — Developer Portfolio
 
+[![Portfolio CI](https://github.com/Rudra0075-ms/portfolio/actions/workflows/portfolio-ci.yml/badge.svg)](https://github.com/Rudra0075-ms/portfolio/actions/workflows/portfolio-ci.yml) [![Live Portfolio](https://img.shields.io/badge/Live-Portfolio-6366f1)](https://madhab.dpdns.org/)
+
 > **B.Tech CSE (AI & ML) student | Python Developer | Django & Backend Development**  
 > Bhubaneswar, Odisha, India
 
@@ -62,19 +64,36 @@ Other frontend work includes a [Fitness Guide](https://github.com/Rudra0075-ms/f
 
 ## Run the portfolio locally
 
-The React application is inside `rudra-madhab-sahoo---portfolio/`.
+**Requirements:** Node.js 20 or later and npm. The React + TypeScript application is inside `rudra-madhab-sahoo---portfolio/`.
 
 ```bash
-cd rudra-madhab-sahoo---portfolio
+# Clone the repository
+git clone https://github.com/Rudra0075-ms/portfolio.git
+cd portfolio/rudra-madhab-sahoo---portfolio
+
+# Install dependencies and start the development server
 npm install
 npm run dev
 ```
 
-Create a production build with:
+Open the local URL printed by Vite (normally `http://localhost:3000`).
+
+### Production checks
+
+Run the same checks used by the GitHub Actions workflow:
 
 ```bash
+# TypeScript type-check
+npm run lint
+
+# Create the production bundle
 npm run build
+
+# Preview the production bundle locally
+npm run preview
 ```
+
+The production files are generated in `rudra-madhab-sahoo---portfolio/dist/`. GitHub Actions runs the type-check and production build on every push and pull request to `main`.
 
 ## Project structure
 
