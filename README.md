@@ -89,7 +89,7 @@ Here are a few projects that reflect what I've been learning and building. Each 
   *August 2025 – May 2029* | CGPA: **8.00**
 
 - **Bridgewell Global School, Bhubaneswar**  
-  Class XII | *2024–2025* | **60.4%**
+  Class XII | *2024–2025* | 
 
 ## Certifications & recognition
 
