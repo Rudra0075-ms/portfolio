@@ -15,10 +15,10 @@ export const Certifications: React.FC = () => {
               <span>CREDENTIALS & INTERNSHIPS</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-display font-bold text-slate-900 dark:text-white tracking-tight">
-              Verified certifications.
+              Internships & certifications.
             </h2>
             <p className="mt-3 text-base text-slate-600 dark:text-slate-400">
-              Real internship certificates and official documentation completed during academic studies.
+              Virtual internship experience, completed training and the certificate document available in this portfolio.
             </p>
           </div>
         </RevealOnScroll>
