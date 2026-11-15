@@ -41,11 +41,11 @@ export const About: React.FC = () => {
                 </p>
 
                 <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
-                  My most comfortable programming language is <strong className="text-slate-900 dark:text-white font-semibold">Python</strong>. I use it to build practical utilities, automate computational tasks, and explore the frontier of modern AI engineering — specifically <strong className="text-slate-900 dark:text-white font-semibold">agentic workflows, LangChain, LangGraph, RAG architectures, and machine learning fundamentals</strong>.
+                  My primary programming language is <strong className="text-slate-900 dark:text-white font-semibold">Python</strong>. I have used it for automation scripts, file processing, small utilities and a webcam-based face-recognition attendance prototype. My main backend experience is with <strong className="text-slate-900 dark:text-white font-semibold">Django</strong>, including authentication, CRUD operations, search, sorting, pagination and Django ORM with SQLite.
                 </p>
 
                 <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed">
-                  Alongside Python, I build responsive, client-side web applications using HTML5, CSS3, and JavaScript. I prefer an active learning methodology: <em className="text-indigo-600 dark:text-indigo-400 font-medium">build something, break it, understand why, and engineer a cleaner solution</em>.
+                  I have also completed virtual internships in Python full-stack development, Python programming and AI/ML fundamentals. Alongside backend work, I use HTML5, CSS3, JavaScript and Bootstrap to build application interfaces. I prefer an active learning methodology: <em className="text-indigo-600 dark:text-indigo-400 font-medium">build something, understand how it works, and improve it through practice</em>.
                 </p>
 
                 {/* Approach Values Cards */}
@@ -100,8 +100,23 @@ export const About: React.FC = () => {
                   </div>
 
                   <div className="py-2.5 flex justify-between gap-4">
+                    <span className="text-slate-500 dark:text-slate-400">Degree CGPA</span>
+                    <span className="font-semibold text-slate-900 dark:text-white text-right">8.00</span>
+                  </div>
+
+                  <div className="py-2.5 flex justify-between gap-4">
+                    <span className="text-slate-500 dark:text-slate-400">Degree Duration</span>
+                    <span className="font-medium text-slate-900 dark:text-white text-right">Aug 2025 – May 2029</span>
+                  </div>
+
+                  <div className="py-2.5 flex justify-between gap-4">
                     <span className="text-slate-500 dark:text-slate-400">Academic Year</span>
                     <span className="font-medium text-slate-900 dark:text-white text-right">2nd Year (In Progress)</span>
+                  </div>
+
+                  <div className="py-2.5 flex justify-between gap-4">
+                    <span className="text-slate-500 dark:text-slate-400">Class XII</span>
+                    <span className="font-medium text-slate-900 dark:text-white text-right">60.4% · Bridgewell Global School</span>
                   </div>
 
                   <div className="py-2.5 flex justify-between gap-4">
@@ -132,17 +147,17 @@ export const About: React.FC = () => {
                 <Award className="w-5 h-5 text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5 animate-pulse" />
                 <div className="text-xs leading-relaxed">
                   <strong className="block text-slate-900 dark:text-white font-semibold mb-0.5">
-                    EduSkills AI-ML Virtual Internship
+                    Three Completed Virtual Internships
                   </strong>
                   <span className="text-slate-600 dark:text-slate-400">
-                    Supported by Google for Developers / AICTE. Focused on Machine Learning fundamentals and Python AI workflows.
+                    Python Full Stack Development (EduSkills), Python Programming (CodeAlpha), and AI & ML (EduSkills).
                   </span>
                   <div className="mt-2">
                     <a
                       href="#certifications"
                       className="text-indigo-600 dark:text-indigo-400 font-medium hover:underline inline-flex items-center gap-1 group"
                     >
-                      <span>View certificate details</span>
+                      <span>View internships & credentials</span>
                       <span className="group-hover:translate-x-1 transition-transform">→</span>
                     </a>
                   </div>
