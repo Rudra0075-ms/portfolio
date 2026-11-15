@@ -66,12 +66,18 @@ export const Projects: React.FC = () => {
               <SpotlightCard
                 as="article"
                 enableTilt={true}
-                className="h-full flex flex-col rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/[0.025] hover:border-indigo-300 dark:hover:border-indigo-500/40 hover:shadow-xl dark:hover:shadow-[0_0_30px_rgba(99,102,241,0.1)] transition-all group"
+                className="project-card group relative h-full flex flex-col rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/[0.025] transition-all duration-500 ease-out hover:-translate-y-2 hover:border-indigo-400/70 dark:hover:border-indigo-400/50 hover:shadow-[0_18px_55px_-22px_rgba(99,102,241,0.45)] dark:hover:shadow-[0_18px_60px_-18px_rgba(99,102,241,0.22)] focus-within:-translate-y-1"
               >
                 {/* Conceptual Project Graphic with subtle hover zoom */}
                 <div className="relative overflow-hidden">
-                  <div className="transition-transform duration-500 ease-out group-hover:scale-[1.03]">
+                  <div className="transition-transform duration-700 ease-out group-hover:scale-[1.07] group-hover:saturate-125">
                     <ProjectCardGraphic id={project.id} />
+                  </div>
+                  <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-gradient-to-t from-indigo-950/75 via-indigo-950/5 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                  <div className="pointer-events-none absolute inset-x-0 bottom-3 flex justify-center translate-y-3 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+                    <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-slate-950/75 px-3 py-1.5 text-[11px] font-mono text-white shadow-lg backdrop-blur-md">
+                      Explore project <ArrowUpRight className="h-3.5 w-3.5" />
+                    </span>
                   </div>
                   <span className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded text-[10px] font-mono font-medium bg-black/60 backdrop-blur-sm text-slate-300 border border-white/10 transition-colors group-hover:border-indigo-400/40">
                     {project.categoryLabel}
@@ -96,7 +102,7 @@ export const Projects: React.FC = () => {
                       {project.technologies.slice(0, 4).map((tech) => (
                         <span
                           key={tech}
-                          className="px-2 py-0.5 rounded text-[11px] font-mono text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-white/5 border border-slate-200/80 dark:border-white/5 group-hover:border-indigo-300/40 dark:group-hover:border-indigo-500/20 transition-colors"
+                          className="px-2 py-0.5 rounded text-[11px] font-mono text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-white/5 border border-slate-200/80 dark:border-white/5 transition-all duration-300 group-hover:-translate-y-0.5 group-hover:border-indigo-300/60 group-hover:bg-indigo-50 dark:group-hover:border-indigo-500/30 dark:group-hover:bg-indigo-500/10"
                         >
                           {tech}
                         </span>
