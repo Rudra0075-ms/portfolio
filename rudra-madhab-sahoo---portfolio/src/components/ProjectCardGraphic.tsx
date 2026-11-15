@@ -6,6 +6,50 @@ interface ProjectCardGraphicProps {
 
 export const ProjectCardGraphic: React.FC<ProjectCardGraphicProps> = ({ id }) => {
   switch (id) {
+    case 'student-management-system':
+      return <div className="h-32 w-full bg-[#080d18] p-3 font-mono text-[10px] border-b border-white/10">
+        <div className="flex justify-between text-slate-300"><span>● STUDENT PORTAL</span><span className="text-emerald-400">Django · SQLite</span></div>
+        <div className="mt-3 grid grid-cols-[1fr_1.4fr] gap-2">
+          <div className="rounded-lg border border-indigo-400/20 bg-indigo-500/10 p-2 space-y-2"><div className="h-1.5 w-3/4 rounded bg-indigo-300/60"/><div className="h-1.5 w-full rounded bg-white/10"/><div className="h-1.5 w-4/5 rounded bg-white/10"/><div className="rounded bg-indigo-400/20 px-2 py-1 text-center text-indigo-200">Dashboard</div></div>
+          <div className="rounded-lg border border-white/10 bg-white/[0.04] p-2"><div className="mb-1 text-slate-400">Student records</div>{['Aarav · CSE','Diya · AIML','Kabir · ECE'].map((x,i)=><div key={x} className="border-t border-white/5 py-1 text-slate-300"><span className={i===1?'text-violet-400':'text-cyan-400'}>● </span>{x}</div>)}</div>
+        </div><div className="mt-2 h-px w-1/3 bg-indigo-400 transition-all duration-700 group-hover:translate-x-full"/>
+      </div>;
+
+    case 'face-recognition-attendance':
+      return <div className="h-32 w-full bg-[#070d14] p-3 font-mono text-[10px] border-b border-white/10">
+        <div className="flex justify-between text-slate-300"><span>◉ WEBCAM INPUT</span><span className="text-emerald-400">OpenCV</span></div>
+        <div className="relative mx-auto mt-2 flex h-[68px] w-28 items-center justify-center rounded-lg border border-cyan-400/30 bg-gradient-to-br from-cyan-950 to-slate-900"><div className="h-11 w-9 rounded-[45%] border border-cyan-300/70 bg-cyan-300/10"/><div className="absolute left-9 top-3 h-9 w-9 border border-emerald-400/80 transition-all group-hover:scale-110 group-hover:shadow-[0_0_16px_rgba(52,211,153,0.5)]"><span className="absolute -top-2 text-[8px] text-emerald-300">FACE_01</span></div><div className="absolute inset-x-2 top-0 h-px bg-cyan-300 shadow-[0_0_8px_2px_rgba(34,211,238,0.5)] animate-pulse"/></div>
+        <div className="mt-1 flex justify-between text-[9px] text-slate-400"><span>Recognition preview</span><span className="text-emerald-400">Attendance → SQLite</span></div>
+      </div>;
+
+    case 'email-extractor':
+      return <div className="h-32 w-full bg-[#0b0c16] p-3 font-mono text-[10px] border-b border-white/10">
+        <div className="flex justify-between text-slate-300"><span>✉ EMAIL EXTRACTOR</span><span className="text-violet-300">Python · Regex</span></div>
+        <div className="mt-2 rounded-md border border-white/10 bg-black/30 p-2 leading-5"><div className="text-slate-500">input.txt</div><div className="text-slate-300">Contact <span className="text-cyan-300">hello@example.com</span></div><div className="text-slate-300">Support <span className="text-cyan-300">help@demo.in</span></div><div className="text-slate-500">Duplicate removed ✓</div></div>
+        <div className="mt-2 flex gap-2"><span className="text-violet-300">OUTPUT</span><span className="rounded bg-emerald-400/10 px-2 text-emerald-300 group-hover:bg-emerald-400/20">2 unique emails saved</span></div>
+      </div>;
+
+    case 'hangman-game':
+      return <div className="h-32 w-full bg-[#100d1b] p-3 font-mono text-[10px] border-b border-white/10">
+        <div className="flex justify-between text-slate-300"><span>⌁ WORD GUESS CHALLENGE</span><span className="text-amber-300">PYTHON GAME</span></div>
+        <div className="mt-2 flex h-[70px] items-center justify-center gap-4"><svg viewBox="0 0 76 70" className="h-16 w-16 text-violet-300" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><path d="M8 64h58M20 64V7h35v9M55 16v7"/><circle cx="55" cy="29" r="7" className="transition-colors group-hover:stroke-amber-300"/><path d="M55 36v17m0-11-10 8m10-8 9 8m-9 3-8 11m8-11 8 11" className="opacity-70 group-hover:opacity-100"/></svg>
+          <div className="space-y-2"><div className="flex gap-1 text-base font-bold text-white">{['P','Y','_','H','_','N'].map((x,i)=><span key={i} className="border-b-2 border-violet-400 px-1">{x}</span>)}</div><div className="text-slate-400">Wrong attempts: <span className="text-amber-300">2 / 6</span></div><div className="text-emerald-300">P · Y · ?</div></div></div>
+      </div>;
+
+    case 'python-mini-projects':
+      return <div className="h-32 w-full bg-[#0a1018] p-3 font-mono text-[10px] border-b border-white/10">
+        <div className="flex justify-between text-slate-300"><span>PYTHON LAB</span><span className="text-cyan-300">PROJECT COLLECTION</span></div>
+        <div className="mt-3 grid grid-cols-3 gap-2">{[{icon:'♟',label:'Chess',color:'violet'},{icon:'▤',label:'Image → PDF',color:'cyan'},{icon:'◎',label:'OpenCV',color:'emerald'}].map(x=><div key={x.label} className={`rounded-lg border border-${x.color}-400/20 bg-${x.color}-500/10 p-2 text-center transition-transform duration-300 group-hover:-translate-y-1`}><div className="text-xl text-slate-200">{x.icon}</div><div className="mt-1 text-slate-300">{x.label}</div></div>)}</div>
+        <div className="mt-2 text-center text-slate-500">Small builds · Practical Python</div>
+      </div>;
+
+    case 'python-daily':
+      return <div className="h-32 w-full bg-[#0b101b] p-3 font-mono text-[10px] border-b border-white/10">
+        <div className="flex justify-between text-slate-300"><span>PYTHON DAILY TRACKER</span><span className="text-emerald-300">PRACTICE MODE</span></div>
+        <div className="mt-3 grid grid-cols-7 gap-1">{Array.from({length:21},(_,i)=><div key={i} className={`h-5 rounded-sm border border-white/5 transition-all duration-300 group-hover:scale-105 ${[1,2,4,5,8,9,10,12,14,15,18].includes(i)?'bg-emerald-400/70':'bg-white/5'}`}/>)}</div>
+        <div className="mt-2 flex justify-between text-slate-400"><span>Loops · OOP · Files · CSV</span><span className="text-emerald-300">Keep building ↗</span></div>
+      </div>;
+
     case 'real-world-ai-agent':
       return (
         <div className="h-32 w-full bg-slate-900 dark:bg-[#070a0f] p-4 flex flex-col justify-between relative overflow-hidden border-b border-slate-200 dark:border-white/10 font-mono text-[11px]">
@@ -258,10 +302,11 @@ export const ProjectCardGraphic: React.FC<ProjectCardGraphicProps> = ({ id }) =>
       );
 
     default:
-      return (
-        <div className="h-32 w-full bg-slate-900 dark:bg-[#070a0f] p-3 flex items-center justify-center border-b border-slate-200 dark:border-white/10 font-mono text-xs text-slate-400">
-          Developer Project
-        </div>
-      );
+      return <div className="h-32 w-full relative overflow-hidden bg-gradient-to-br from-slate-950 via-indigo-950/40 to-slate-900 p-3 font-mono text-[10px] border-b border-white/10">
+        <div className="absolute -right-8 -top-10 h-28 w-28 rounded-full border border-indigo-400/20 transition-transform duration-700 group-hover:scale-150"/><div className="absolute -bottom-12 -left-6 h-28 w-28 rounded-full border border-cyan-400/20 transition-transform duration-700 group-hover:scale-125"/>
+        <div className="relative flex h-full flex-col justify-between"><div className="flex justify-between text-slate-300"><span>● PROJECT PREVIEW</span><span className="text-indigo-300">BUILD · TEST · LEARN</span></div>
+          <div className="flex items-center justify-center gap-2 text-xs">{['IDEA','CODE','RESULT'].map((x,i)=><React.Fragment key={x}>{i>0&&<span className="text-slate-500">→</span>}<span className={`rounded-md border px-3 py-2 transition-transform duration-300 group-hover:-translate-y-1 ${i===0?'border-indigo-400/30 bg-indigo-400/10 text-indigo-200':i===1?'border-cyan-400/30 bg-cyan-400/10 text-cyan-200':'border-emerald-400/30 bg-emerald-400/10 text-emerald-200'}`}>{x}</span></React.Fragment>)}</div>
+          <div className="flex justify-between text-slate-400"><span>Explore the workflow</span><span className="text-emerald-300">Ready to explore ↗</span></div></div>
+      </div>;
   }
 };
