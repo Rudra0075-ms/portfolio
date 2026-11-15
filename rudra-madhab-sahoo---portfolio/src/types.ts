@@ -69,7 +69,6 @@ export interface ProfileData {
   location: string;
   email: string;
   phone: string;
-  secondaryEmail: string;
   socials: {
     github: string;
     linkedin: string;
