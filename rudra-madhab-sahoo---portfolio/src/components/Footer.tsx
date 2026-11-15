@@ -20,7 +20,7 @@ export const Footer: React.FC = () => {
               <span className="font-display">Rudra Madhab Sahoo</span>
             </div>
             <p className="text-xs text-slate-500 dark:text-slate-400 max-w-md">
-              2nd Year B.Tech CSE (AI & ML) at GITA Autonomous College. Building practical software and exploring agentic AI workflows.
+              Second-year B.Tech CSE (AI & ML) student at GITA Autonomous College, focused on Python development and Django backend projects.
             </p>
           </div>
 
@@ -89,7 +89,7 @@ export const Footer: React.FC = () => {
           </div>
 
           <div className="font-mono">
-            Host: <span className="text-slate-600 dark:text-slate-400">madhab.dpdns.org / GitHub Pages</span>
+            Portfolio: <span className="text-slate-600 dark:text-slate-400">madhab.dpdns.org</span>
           </div>
         </div>
       </div>
