@@ -1,108 +1,154 @@
-# Rudra Madhab Sahoo — Developer Portfolio
+# Hi, I'm Rudra Madhab Sahoo 👋
 
-[![Portfolio CI](https://github.com/Rudra0075-ms/portfolio/actions/workflows/portfolio-ci.yml/badge.svg)](https://github.com/Rudra0075-ms/portfolio/actions/workflows/portfolio-ci.yml) [![Live Portfolio](https://img.shields.io/badge/Live-Portfolio-6366f1)](https://madhab.dpdns.org/)
+I'm a second-year **B.Tech Computer Science & Engineering (AI & ML)** student at **GITA Autonomous College, Bhubaneswar**. I enjoy building things with Python, learning backend development, and exploring how AI can solve practical problems.
 
-> **B.Tech CSE (AI & ML) student | Python Developer | Django & Backend Development**  
-> Bhubaneswar, Odisha, India
+I'm currently focused on improving my Python and Django skills by building projects, practising regularly, and learning through hands-on work.
 
-🌐 **Portfolio:** [madhab.dpdns.org](https://madhab.dpdns.org/)  
-📄 **Resume:** Use the **Resume** button in the portfolio navigation to download the latest PDF. The downloadable file is served from `rudra-madhab-sahoo---portfolio/public/resume.pdf` (keep this file updated whenever the resume changes).  
+<p align="left">
+  <a href="https://madhab.dpdns.org/"><img src="https://img.shields.io/badge/Portfolio-Visit-6366f1?style=for-the-badge" alt="Portfolio"></a>
+  <a href="https://www.linkedin.com/in/rudra-madhab-sahoo-rms007/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin" alt="LinkedIn"></a>
+  <a href="mailto:sahoorudramadhab2007@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+</p>
 
-💼 **LinkedIn:** [Rudra Madhab Sahoo](https://www.linkedin.com/in/rudra-madhab-sahoo-rms007/)  
-🐙 **GitHub:** [Rudra0075-ms](https://github.com/Rudra0075-ms)  
-✉️ **Email:** [sahoorudramadhab2007@gmail.com](mailto:sahoorudramadhab2007@gmail.com)
+[![Portfolio CI](https://github.com/Rudra0075-ms/portfolio/actions/workflows/portfolio-ci.yml/badge.svg)](https://github.com/Rudra0075-ms/portfolio/actions/workflows/portfolio-ci.yml)
 
-## About
+## A little about me
 
-I am a second-year B.Tech Computer Science and Engineering student (AI & ML) at **GITA Autonomous College, Bhubaneswar**, with a current CGPA of **8.00**.
+- 🎓 Pursuing B.Tech in CSE (AI & ML), 2025–2029.
+- 📍 Based in Bhubaneswar, Odisha, India.
+- 💻 Most interested in Python development and backend engineering.
+- 🌱 Learning by building Django applications, Python utilities, and frontend projects.
+- 🎯 Looking for internship opportunities in Python, Django, backend, full-stack development, and AI/ML.
+- 📊 Current CGPA: **8.00**.
 
-My primary development focus is Python and backend engineering. I have built Django applications with authentication, CRUD operations, search, sorting, pagination and ORM-based database management. I also work on Python automation scripts, programming practice and computer-vision learning projects.
+## Skills & tools
 
-I am seeking internship opportunities in Python Development, Backend Engineering, Django / Full-Stack Development and AI/ML.
+- **Programming:** Python, Java, C
+- **Backend:** Django, Django ORM, Flask (familiarity), REST API fundamentals
+- **Frontend:** HTML, CSS, JavaScript, Bootstrap
+- **AI & data:** Machine Learning fundamentals, NumPy, Pandas, TensorFlow (exposure)
+- **Computer vision:** OpenCV, face recognition
+- **Database:** SQLite and relational database fundamentals
+- **Developer tools:** Git, GitHub, VS Code
 
-## Technical toolkit
+## Projects I've worked on
 
-| Area | Technologies |
-|---|---|
-| Programming | Python, Java, C |
-| Backend | Django, Flask (familiarity), Django ORM, REST API fundamentals |
-| Frontend | HTML5, CSS3, JavaScript, Bootstrap |
-| AI / ML | ML fundamentals, NumPy, Pandas, TensorFlow (exposure) |
-| Computer Vision | OpenCV, face recognition |
-| Database | SQLite, relational database fundamentals |
-| Tools | Git, GitHub, VS Code |
+Here are a few projects that reflect what I've been learning and building. Each one has helped me practise a different part of development.
 
+### Python & backend
 
-## Portfolio interactions
+- **[Student Management System](https://github.com/Rudra0075-ms/Student_Management_System)**  
+  A Django application with login/authentication, student management, CRUD operations, search, sorting, pagination, validation, and SQLite.
 
-- Responsive navigation with a direct resume-download action (desktop and mobile).
-- Project cards with animated preview zoom, spotlight/tilt interaction, gradient hover treatment, technology-chip feedback and quick links to source code or live demos.
-- Project filters and a details modal for exploring individual projects.
+- **[Face Recognition Attendance System](https://github.com/Rudra0075-ms/Python_Mini_Projects/tree/main/Face%20Recognition%20Attendance%20System)**  
+  A learning project that uses a webcam for face registration and recognition, with attendance records stored locally in SQLite.
 
-## Featured projects
+- **[Email Extractor](https://github.com/Rudra0075-ms/CodeAlpha_EmailExtractor)**  
+  A Python utility that finds email addresses in text files using regular expressions and removes duplicates.
 
-| Project | Summary | Repository |
-|---|---|---|
-| Student Management System | Django application with authentication, student CRUD, search, sorting, pagination, validation and SQLite | [Repository](https://github.com/Rudra0075-ms/Student_Management_System) |
-| Face Recognition Attendance System | Webcam-based face registration and recognition with local SQLite attendance logging; learning prototype | [Project folder](https://github.com/Rudra0075-ms/Python_Mini_Projects/tree/main/Face%20Recognition%20Attendance%20System) |
-| Email Extractor | Python script that extracts and deduplicates email addresses from text files using regex | [Repository](https://github.com/Rudra0075-ms/CodeAlpha_EmailExtractor) |
-| Hangman Game | Console word-guessing game built during the CodeAlpha Python internship | [Repository](https://github.com/Rudra0075-ms/CodeAlpha_HangmanGame) |
-| Python Mini Projects | Collection including chess, image-to-PDF conversion and small Python programs | [Repository](https://github.com/Rudra0075-ms/Python_Mini_Projects) |
-| Python Daily Practice | Python fundamentals, OOP, file handling, CSV and notebook exercises | [Repository](https://github.com/Rudra0075-ms/PYTHON_DAILY) |
+- **[Hangman Game](https://github.com/Rudra0075-ms/CodeAlpha_HangmanGame)**  
+  A console-based word guessing game built during my CodeAlpha Python internship.
 
-Other frontend work includes a [Fitness Guide](https://github.com/Rudra0075-ms/fitness_guide), [All-in-One Calculator](https://github.com/Rudra0075-ms/All-in-one-Calculator), [Analog Watch](https://github.com/Rudra0075-ms/analog_watch), [Memory Card Game](https://github.com/Rudra0075-ms/memory_card_game) and [To-Do List](https://github.com/Rudra0075-ms/to-do-list___web).
+- **[Python Mini Projects](https://github.com/Rudra0075-ms/Python_Mini_Projects)**  
+  A collection of small Python projects, including chess and an image-to-PDF converter.
+
+- **[Python Daily Practice](https://github.com/Rudra0075-ms/PYTHON_DAILY)**  
+  Exercises covering Python fundamentals, OOP, file handling, CSV operations, and notebook practice.
+
+### Frontend projects
+
+- [Fitness Guide](https://github.com/Rudra0075-ms/fitness_guide)
+- [All-in-One Calculator](https://github.com/Rudra0075-ms/All-in-one-Calculator)
+- [Analog Watch](https://github.com/Rudra0075-ms/analog_watch)
+- [Memory Card Game](https://github.com/Rudra0075-ms/memory_card_game)
+- [To-Do List](https://github.com/Rudra0075-ms/to-do-list___web)
 
 ## Internship experience
 
-- **Python Full Stack Development Virtual Intern — EduSkills Foundation** (Aug 2026 – Oct 2026, 8 weeks). Built a Django Student Management System and practised authentication, CRUD, ORM, search, sorting, pagination and frontend integration.
-- **Python Programming Virtual Intern — CodeAlpha** (Sep 2026). Developed a Hangman Game and Email Extractor using Python, regular expressions and file handling. Received a Letter of Recommendation.
-- **AI & ML Virtual Intern — Google AI-ML Virtual Internship (EduSkills)** (Jun 2026 – Aug 2026, 8 weeks). Covered AI/ML fundamentals, supervised learning and model evaluation.
+- **Python Full Stack Development Virtual Intern — EduSkills Foundation**  
+  *August 2026 – October 2026 (8 weeks)*  
+  - Worked on a Django Student Management System.
+  - Practised authentication, CRUD operations, Django ORM, search, sorting, and pagination.
+  - Worked on connecting frontend pages with backend functionality.
+
+- **Python Programming Virtual Intern — CodeAlpha**  
+  *September 2026*  
+  - Built a Hangman Game and an Email Extractor using Python.
+  - Practised regular expressions and file handling.
+  - Received a Letter of Recommendation.
+
+- **AI & ML Virtual Intern — Google AI-ML Virtual Internship (EduSkills)**  
+  *June 2026 – August 2026 (8 weeks)*  
+  - Studied AI and machine learning fundamentals.
+  - Covered supervised learning and model evaluation.
 
 ## Education
 
-- **GITA Autonomous College, Bhubaneswar** — B.Tech, Computer Science & Engineering (AI & ML), Aug 2025 – May 2029; CGPA: **8.00**
-- **Bridgewell Global School, Bhubaneswar** — Class XII, 2024–2025; **60.4%**
+- **GITA Autonomous College, Bhubaneswar**  
+  B.Tech — Computer Science & Engineering (AI & ML)  
+  *August 2025 – May 2029* | CGPA: **8.00**
+
+- **Bridgewell Global School, Bhubaneswar**  
+  Class XII | *2024–2025* | **60.4%**
 
 ## Certifications & recognition
 
-- Google AI & ML Virtual Internship — EduSkills (Jun 2026 – Aug 2026)
-- Python Full-Stack Development Virtual Internship — EduSkills (Aug 2026 – Oct 2026)
-- Python Programming Virtual Internship — CodeAlpha (Sep 2026), Letter of Recommendation received
-- Programming with C — Simplilearn via Coursera (Jan 2026)
-- CampusCrew Priority Member — Unstop (Aug 2026)
+- Google AI & ML Virtual Internship — EduSkills (June–August 2026)
+- Python Full-Stack Development Virtual Internship — EduSkills (August–October 2026)
+- Python Programming Virtual Internship — CodeAlpha (September 2026)
+- Letter of Recommendation — CodeAlpha
+- Programming with C — Simplilearn via Coursera (January 2026)
+- CampusCrew Priority Member — Unstop (August 2026)
 
-## Run the portfolio locally
+## About this portfolio
 
-**Requirements:** Node.js 20 or later and npm. The React + TypeScript application is inside `rudra-madhab-sahoo---portfolio/`.
+I built this portfolio to bring my projects, skills, and learning journey together in one place.
+
+Some of its features include:
+
+- Responsive layout for desktop and mobile.
+- Light and dark themes.
+- Project cards with animated previews, hover effects, and spotlight/tilt interactions.
+- Project category filters and a details popup.
+- Quick links to project repositories and live demos.
+- Resume download option in the navigation menu.
+
+### Download my resume
+
+Use the **Resume** button in the portfolio navigation to download my PDF resume.
+
+To enable or update the download, place the latest file at:
+
+`rudra-madhab-sahoo---portfolio/public/resume.pdf`
+
+## Run the project locally
+
+Want to explore the code or run the portfolio on your machine? Follow these steps.
+
+**You'll need:**
+- Node.js 20 or later
+- npm
+
+**Setup:**
 
 ```bash
-# Clone the repository
 git clone https://github.com/Rudra0075-ms/portfolio.git
 cd portfolio/rudra-madhab-sahoo---portfolio
-
-# Install dependencies and start the development server
 npm install
 npm run dev
 ```
 
-Open the local URL printed by Vite (normally `http://localhost:3000`).
+Open the local URL shown in your terminal (Vite normally uses `http://localhost:3000`).
 
-### Production checks
-
-Run the same checks used by the GitHub Actions workflow:
+**Useful commands:**
 
 ```bash
-# TypeScript type-check
-npm run lint
-
-# Create the production bundle
-npm run build
-
-# Preview the production bundle locally
-npm run preview
+npm run lint    # TypeScript type-check
+npm run build   # Create the production build
+npm run preview # Preview the production build locally
 ```
 
-The production files are generated in `rudra-madhab-sahoo---portfolio/dist/`. GitHub Actions runs the type-check and production build on every push and pull request to `main`.
+The production build is generated in the `dist/` folder. GitHub Actions runs the type-check and build on pushes and pull requests to the `main` branch.
 
 ## Project structure
 
@@ -121,9 +167,15 @@ rudra-madhab-sahoo---portfolio/
     └── types.ts
 ```
 
-## Profiles
+## Find me online
 
-- [GitHub](https://github.com/Rudra0075-ms)
-- [LinkedIn](https://www.linkedin.com/in/rudra-madhab-sahoo-rms007/)
-- [Codolio](https://codolio.com/profile/Rms_007)
-- [Google Developer Profile](https://me.developers.google.com/u/rudramadhabsahoogita)
+- 🌐 [Portfolio](https://madhab.dpdns.org/)
+- 💻 [GitHub](https://github.com/Rudra0075-ms)
+- 💼 [LinkedIn](https://www.linkedin.com/in/rudra-madhab-sahoo-rms007/)
+- 🧩 [Codolio](https://codolio.com/profile/Rms_007)
+- 🚀 [Google Developer Profile](https://me.developers.google.com/u/rudramadhabsahoogita)
+- ✉️ [Email](mailto:sahoorudramadhab2007@gmail.com)
+
+---
+
+Thanks for stopping by! I'm always learning, building, and looking for opportunities to grow as a developer. 🙂
