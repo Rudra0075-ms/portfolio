@@ -10,7 +10,8 @@ export const profileData: ProfileData = {
   institution: 'GITA Autonomous College, Bhubaneswar',
   location: 'Bhubaneswar, Odisha, India',
   email: 'sahoorudramadhab2007@gmail.com',
-  secondaryEmail: 'sahoorudramadhab2007@gmail.com',
+  phone: '+91 78478 98352',
+  secondaryEmail: 'msrudra0075@gmail.com',
   socials: {
     github: 'https://github.com/Rudra0075-ms',
     linkedin: 'https://www.linkedin.com/in/rudra-madhab-sahoo-rms007/',
