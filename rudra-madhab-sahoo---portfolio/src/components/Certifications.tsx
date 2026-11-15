@@ -49,8 +49,8 @@ export const Certifications: React.FC = () => {
                     </div>
 
                     <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium text-emerald-700 dark:text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 self-start sm:self-auto">
-                      <ShieldCheck className="w-3.5 h-3.5 text-emerald-500 animate-pulse" />
-                      <span>Verified Document</span>
+                      <ShieldCheck className="w-3.5 h-3.5 text-emerald-500" />
+                      <span>{cert.isPdf ? 'Certificate PDF' : 'Completed'}</span>
                     </div>
                   </div>
 
@@ -95,27 +95,30 @@ export const Certifications: React.FC = () => {
                     ))}
                   </div>
 
-                  {/* Action Buttons with shine & lift */}
-                  <div className="pt-4 border-t border-slate-200/80 dark:border-white/10 flex flex-wrap items-center gap-3">
-                    <a
-                      href={cert.documentUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn-shine inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs font-semibold text-white bg-indigo-600 hover:bg-indigo-500 hover:-translate-y-0.5 active:translate-y-0 active:scale-95 transition-all shadow-xs hover:shadow-[0_0_15px_rgba(99,102,241,0.4)]"
-                    >
-                      <FileText className="w-4 h-4" />
-                      <span>Open Certificate PDF ↗</span>
-                    </a>
-
-                    <a
-                      href={cert.documentUrl}
-                      download="Rudra-Madhab-Sahoo-AI-ML-Virtual-Internship.pdf"
-                      className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs font-semibold text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-white/5 hover:bg-slate-200 dark:hover:bg-white/10 hover:-translate-y-0.5 active:translate-y-0 active:scale-95 border border-slate-200 dark:border-white/10 transition-all"
-                    >
-                      <Download className="w-4 h-4" />
-                      <span>Download PDF</span>
-                    </a>
-                  </div>
+                  {/* Link only to a real certificate file or the related project repository. */}
+                  {cert.documentUrl && (
+                    <div className="pt-4 border-t border-slate-200/80 dark:border-white/10 flex flex-wrap items-center gap-3">
+                      <a
+                        href={cert.documentUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-shine inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs font-semibold text-white bg-indigo-600 hover:bg-indigo-500 hover:-translate-y-0.5 transition-all shadow-xs"
+                      >
+                        {cert.isPdf ? <FileText className="w-4 h-4" /> : <ExternalLink className="w-4 h-4" />}
+                        <span>{cert.isPdf ? 'Open Certificate PDF ↗' : 'View Related Project ↗'}</span>
+                      </a>
+                      {cert.isPdf && (
+                        <a
+                          href={cert.documentUrl}
+                          download="Rudra-Madhab-Sahoo-AI-ML-Virtual-Internship.pdf"
+                          className="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs font-semibold text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 transition-all"
+                        >
+                          <Download className="w-4 h-4" />
+                          <span>Download PDF</span>
+                        </a>
+                      )}
+                    </div>
+                  )}
                 </SpotlightCard>
               </RevealOnScroll>
             </div>
@@ -132,12 +135,12 @@ export const Certifications: React.FC = () => {
                   Internship Program Context
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-                  The AI-ML Virtual Internship with EduSkills provides comprehensive training in artificial intelligence, model pipelines, and practical Python problem solving.
+                  The resume lists three completed virtual internships: Python Full Stack Development with EduSkills, Python Programming with CodeAlpha, and AI & ML with EduSkills.
                 </p>
                 <div className="p-3 rounded-xl bg-slate-50 dark:bg-white/[0.02] border border-slate-200 dark:border-white/10 text-xs font-mono text-slate-600 dark:text-slate-400 space-y-1">
-                  <div>Document: AI-ML-Virtual-Internship.pdf</div>
-                  <div>Status: Completed & Archived</div>
-                  <div>Source: Repository Root Asset</div>
+                  <div>Python Full Stack: Aug–Oct 2026</div>
+                  <div>Python Programming: Sep 2026</div>
+                  <div>AI & ML: Jun–Aug 2026</div>
                 </div>
               </SpotlightCard>
             </RevealOnScroll>
