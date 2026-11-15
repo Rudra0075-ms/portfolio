@@ -113,13 +113,7 @@ export const About: React.FC = () => {
                     <span className="text-slate-500 dark:text-slate-400">Academic Year</span>
                     <span className="font-medium text-slate-900 dark:text-white text-right">2nd Year (In Progress)</span>
                   </div>
-
-                  <div className="py-2.5 flex justify-between gap-4">
-                    <span className="text-slate-500 dark:text-slate-400">Class XII</span>
-                    <span className="font-medium text-slate-900 dark:text-white text-right">60.4% · Bridgewell Global School</span>
-                  </div>
-
-                  <div className="py-2.5 flex justify-between gap-4">
+<div className="py-2.5 flex justify-between gap-4">
                     <span className="text-slate-500 dark:text-slate-400">Location</span>
                     <span className="font-medium text-slate-900 dark:text-white text-right flex items-center gap-1">
                       <MapPin className="w-3.5 h-3.5 text-slate-400" /> Odisha, India
