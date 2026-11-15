@@ -1,4 +1,4 @@
-name: Portfolio CI
+name: Portfolio CI and Deploy
 
 on:
   push:
@@ -6,6 +6,13 @@ on:
   pull_request:
     branches: [main]
   workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: portfolio-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   verify:
@@ -31,3 +38,28 @@ jobs:
 
       - name: Build production site
         run: npm run build
+
+      - name: Upload production site
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: rudra-madhab-sahoo---portfolio/dist
+
+  deploy:
+    name: Deploy portfolio to GitHub Pages
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Deploy production site
+        id: deployment
+        uses: actions/deploy-pages@v4
