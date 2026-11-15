@@ -68,6 +68,7 @@ export interface ProfileData {
   institution: string;
   location: string;
   email: string;
+  phone: string;
   secondaryEmail: string;
   socials: {
     github: string;
