@@ -66,11 +66,11 @@ export const Projects: React.FC = () => {
               <SpotlightCard
                 as="article"
                 enableTilt={true}
-                className="project-card group relative h-full flex flex-col rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/[0.025] transition-all duration-500 ease-out hover:-translate-y-2 hover:border-indigo-400/70 dark:hover:border-indigo-400/50 hover:shadow-[0_18px_55px_-22px_rgba(99,102,241,0.45)] dark:hover:shadow-[0_18px_60px_-18px_rgba(99,102,241,0.22)] focus-within:-translate-y-1"
+                className="project-card group relative isolate h-full flex flex-col overflow-hidden rounded-2xl border border-slate-200 dark:border-white/10 bg-white dark:bg-[#10131d]/80 transition-all duration-500 ease-out hover:-translate-y-3 hover:scale-[1.015] hover:border-indigo-400/80 dark:hover:border-indigo-400/60 hover:shadow-[0_24px_70px_-24px_rgba(99,102,241,0.55)] dark:hover:shadow-[0_28px_80px_-24px_rgba(99,102,241,0.3)] focus-within:-translate-y-1 before:pointer-events-none before:absolute before:inset-0 before:rounded-2xl before:bg-gradient-to-br before:from-indigo-500/0 before:via-violet-500/0 before:to-cyan-400/0 before:opacity-0 before:transition-opacity before:duration-500 hover:before:from-indigo-500/[0.08] hover:before:via-violet-500/[0.04] hover:before:to-cyan-400/[0.08] hover:before:opacity-100"
               >
                 {/* Conceptual Project Graphic with subtle hover zoom */}
-                <div className="relative overflow-hidden">
-                  <div className="transition-transform duration-700 ease-out group-hover:scale-[1.07] group-hover:saturate-125">
+                <div className="relative overflow-hidden border-b border-slate-200/70 dark:border-white/10">
+                  <div className="transition-transform duration-700 ease-out group-hover:scale-[1.1] group-hover:saturate-150 group-hover:brightness-110">
                     <ProjectCardGraphic id={project.id} />
                   </div>
                   <div aria-hidden="true" className="pointer-events-none absolute inset-0 bg-gradient-to-t from-indigo-950/75 via-indigo-950/5 to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
@@ -85,9 +85,9 @@ export const Projects: React.FC = () => {
                 </div>
 
                 {/* Card Body */}
-                <div className="p-5 flex-1 flex flex-col justify-between space-y-4">
+                <div className="relative z-[1] p-5 flex-1 flex flex-col justify-between space-y-4">
                   <div className="space-y-2">
-                    <h3 className="font-display font-bold text-lg text-slate-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                    <h3 className="font-display font-bold text-lg text-slate-900 dark:text-white group-hover:translate-x-1 group-hover:text-indigo-600 dark:group-hover:text-indigo-300 transition-all duration-300">
                       {project.name}
                     </h3>
 
