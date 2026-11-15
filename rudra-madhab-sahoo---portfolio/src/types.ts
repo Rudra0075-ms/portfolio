@@ -38,7 +38,7 @@ export interface Certification {
   type: string;
   description: string;
   tags: string[];
-  documentUrl: string;
+  documentUrl: string | null;
   isPdf: boolean;
   highlight: string;
   skillsLearned: string[];
