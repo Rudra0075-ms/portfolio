@@ -74,9 +74,9 @@ export const Footer: React.FC = () => {
             © {new Date().getFullYear()} Rudra Madhab Sahoo. All rights reserved.
           </div>
 
-          {/* Genuine repository credit preserved from Thanks.md */}
-          <div className="flex items-center gap-1">
-            <span>Special thanks to</span>
+          {/* Contributor credits */}
+          <div className="flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1 text-center">
+            <span>Built with support from</span>
             <a
               href="https://github.com/Pinaki-Das2007"
               target="_blank"
@@ -85,7 +85,16 @@ export const Footer: React.FC = () => {
             >
               @Pinaki-Das2007
             </a>
-            <span>for contribution & support.</span>
+            <span>and</span>
+            <a
+              href="https://github.com/pradhansandeep425-ship-it"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-600 dark:text-indigo-400 hover:underline font-medium"
+            >
+              @pradhansandeep425-ship-it
+            </a>
+            <span>— thanks for the contributions and support!</span>
           </div>
 
           <div className="font-mono">
