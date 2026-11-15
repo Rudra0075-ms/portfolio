@@ -273,7 +273,7 @@ export const certificationsData: Certification[] = [
     type: 'Certificate · Jan 2026',
     description: 'Completed the Programming with C course.',
     tags: ['C', 'Programming Fundamentals'],
-    documentUrl: 'https://www.coursera.org/',
+    documentUrl: null,
     isPdf: false,
     highlight: 'Course completion certificate',
     skillsLearned: ['C programming fundamentals']
@@ -285,7 +285,7 @@ export const certificationsData: Certification[] = [
     type: 'Recognition · Aug 2026',
     description: 'Selected as a CampusCrew Priority Member.',
     tags: ['Campus Community', 'Recognition'],
-    documentUrl: 'https://unstop.com/',
+    documentUrl: null,
     isPdf: false,
     highlight: 'CampusCrew Priority Member selection',
     skillsLearned: ['Student community participation']
