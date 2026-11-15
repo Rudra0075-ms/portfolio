@@ -140,7 +140,7 @@ export const Contact: React.FC = () => {
                 </div>
 
                 <a
-                  href={`tel:${profileData.phone.replace(/\\s/g, '')}`}
+                  href={`tel:${profileData.phone.replaceAll(' ', '')}`}
                   className="inline-flex items-center gap-2 text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400"
                 >
                   <Phone className="w-4 h-4" />
