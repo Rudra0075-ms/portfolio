@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { profileData } from '../data/portfolioData';
 import { SpotlightCard } from './SpotlightCard';
 import { RevealOnScroll } from './RevealOnScroll';
-import { Mail, Github, Linkedin, Code2, Copy, Check, ExternalLink, Send } from 'lucide-react';
+import { Mail, Github, Linkedin, Code2, Copy, Check, ExternalLink, Send, Phone } from 'lucide-react';
 
 export const Contact: React.FC = () => {
   const [copied, setCopied] = useState(false);
@@ -84,7 +84,7 @@ export const Contact: React.FC = () => {
               Let's build something useful.
             </h2>
             <p className="mt-3 text-base text-slate-600 dark:text-slate-400">
-              I am actively open to internships, hackathons, software engineering opportunities, and technical collaborations.
+              I am seeking internship opportunities in Python development, backend engineering, Django/full-stack development and AI/ML.
             </p>
           </div>
         </RevealOnScroll>
@@ -103,7 +103,7 @@ export const Contact: React.FC = () => {
                   </span>
                   <span className="text-xs font-medium text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                    Replies within 24 hours
+                    Open to internship opportunities
                   </span>
                 </div>
 
@@ -138,6 +138,14 @@ export const Contact: React.FC = () => {
                     </a>
                   </div>
                 </div>
+
+                <a
+                  href={`tel:${profileData.phone.replace(/\\s/g, '')}`}
+                  className="inline-flex items-center gap-2 text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400"
+                >
+                  <Phone className="w-4 h-4" />
+                  <span>{profileData.phone}</span>
+                </a>
 
                 {/* Quick Email Launcher for Recruiters & Collaborators */}
                 <div className="pt-3 space-y-3">
@@ -239,7 +247,7 @@ export const Contact: React.FC = () => {
               <div className="p-4 rounded-xl border border-slate-200 dark:border-white/10 bg-slate-50 dark:bg-white/[0.01] text-xs text-slate-500 dark:text-slate-400 space-y-1 font-mono">
                 <div>Institution: GITA Autonomous College, Bhubaneswar</div>
                 <div>Location: Odisha, India (IST / UTC+5:30)</div>
-                <div>Secondary Email: {profileData.secondaryEmail}</div>
+                <div>Seeking: Python Development · Backend Engineering · Django / Full Stack · AI / ML</div>
               </div>
             </RevealOnScroll>
           </div>
