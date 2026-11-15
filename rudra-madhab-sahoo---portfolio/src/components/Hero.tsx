@@ -19,9 +19,9 @@ import {
 export const Hero: React.FC = () => {
   const roles = [
     'Python Developer',
-    'AI & ML Learner',
-    'Practical Web Builder',
-    'Agentic AI Explorer'
+    'Django Backend Developer',
+    'Full-Stack Python Intern',
+    'AI & ML Learner'
   ];
 
   const [roleIndex, setRoleIndex] = useState(0);
@@ -54,8 +54,9 @@ export const Hero: React.FC = () => {
         self.degree = "B.Tech CSE (AI & ML)"
         self.year = 2
         self.primary_lang = "Python"
-        self.core_stack = ["Python", "LangChain", "LangGraph", "Web"]
-        self.learning = ["Agentic AI", "DSA", "RAG"]
+        self.backend = "Django"
+        self.stack = ["Python", "Django", "SQLite", "HTML", "CSS", "JS"]
+        self.focus = ["Backend", "Automation", "AI/ML"]
 
     def workflow(self):
         # Learn by building
@@ -116,7 +117,7 @@ export const Hero: React.FC = () => {
 
             {/* Personal Positioning Statement */}
             <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl">
-              I build practical software and web applications with <strong className="text-slate-900 dark:text-white font-semibold">Python</strong> while growing into <strong className="text-slate-900 dark:text-white font-semibold">AI agents, LangChain, LangGraph, and backend engineering</strong>. A curious developer who learns by building real tools from first principles.
+              I build practical applications with <strong className="text-slate-900 dark:text-white font-semibold">Python and Django</strong>, including database-backed web apps, automation scripts and computer-vision learning projects. I am currently strengthening my backend engineering and AI/ML fundamentals.
             </p>
 
             {/* CTAs with Light Sweep & Lift */}
@@ -252,10 +253,10 @@ export const Hero: React.FC = () => {
                   self.primary_lang = <span className="text-emerald-300">"Python"</span>
                 </div>
                 <div className="pl-8 text-slate-300">
-                  self.core_stack = [<span className="text-emerald-300">"Python"</span>, <span className="text-emerald-300">"LangChain"</span>, <span className="text-emerald-300">"LangGraph"</span>, <span className="text-emerald-300">"Web"</span>]
+                  self.backend = <span className="text-emerald-300">"Django"</span>
                 </div>
                 <div className="pl-8 text-slate-300">
-                  self.learning = [<span className="text-emerald-300">"Agentic AI"</span>, <span className="text-emerald-300">"DSA"</span>, <span className="text-emerald-300">"RAG"</span>]
+                  self.stack = [<span className="text-emerald-300">"Python"</span>, <span className="text-emerald-300">"Django"</span>, <span className="text-emerald-300">"SQLite"</span>]
                 </div>
                 <div className="pl-4 pt-1">
                   <span className="text-indigo-400">def</span>{' '}
@@ -274,7 +275,7 @@ export const Hero: React.FC = () => {
                   <Terminal className="w-3.5 h-3.5 text-indigo-400 animate-pulse" />
                   <span>status: ready_to_collaborate</span>
                 </span>
-                <span className="text-[11px] font-mono text-emerald-400">● 9 Projects built</span>
+                <span className="text-[11px] font-mono text-emerald-400">● 8 Project highlights</span>
               </div>
             </SpotlightCard>
           </div>
