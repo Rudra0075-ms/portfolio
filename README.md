@@ -1,165 +1,101 @@
-# 👋 Hi, I'm Rudra Madhab Sahoo. 
+# Rudra Madhab Sahoo — Developer Portfolio
 
-> 🎓 2nd Year B.Tech CSE (AI & ML) | 🚀 Aspiring AI Engineer | 📍 Odisha, India
+> **B.Tech CSE (AI & ML) student | Python Developer | Django & Backend Development**  
+> Bhubaneswar, Odisha, India
 
----
+🌐 **Portfolio:** [madhab.dpdns.org](https://madhab.dpdns.org/)  
+💼 **LinkedIn:** [Rudra Madhab Sahoo](https://www.linkedin.com/in/rudra-madhab-sahoo-rms007/)  
+🐙 **GitHub:** [Rudra0075-ms](https://github.com/Rudra0075-ms)  
+✉️ **Email:** [sahoorudramadhab2007@gmail.com](mailto:sahoorudramadhab2007@gmail.com)
 
-## 🚀 About Me
+## About
 
-| | |
+I am a second-year B.Tech Computer Science and Engineering student (AI & ML) at **GITA Autonomous College, Bhubaneswar**, with a current CGPA of **8.00**.
+
+My primary development focus is Python and backend engineering. I have built Django applications with authentication, CRUD operations, search, sorting, pagination and ORM-based database management. I also work on Python automation scripts, programming practice and computer-vision learning projects.
+
+I am seeking internship opportunities in Python Development, Backend Engineering, Django / Full-Stack Development and AI/ML.
+
+## Technical toolkit
+
+| Area | Technologies |
 |---|---|
-| 🎓 **Degree** | B.Tech CSE with AI & ML Specialization (2nd Year) |
-| 💻 **Interests** | Python · Web Development · Agentic AI · AI Agents |
-| 📚 **Currently Learning** | DSA · LangChain · LangGraph · Machine Learning |
-| 🎯 **Goal** | Aspiring AI Engineer targeting real-world AI projects |
+| Programming | Python, Java, C |
+| Backend | Django, Flask (familiarity), Django ORM, REST API fundamentals |
+| Frontend | HTML5, CSS3, JavaScript, Bootstrap |
+| AI / ML | ML fundamentals, NumPy, Pandas, TensorFlow (exposure) |
+| Computer Vision | OpenCV, face recognition |
+| Database | SQLite, relational database fundamentals |
+| Tools | Git, GitHub, VS Code |
 
----
+## Featured projects
 
-## 🛠️ Skills
+| Project | Summary | Repository |
+|---|---|---|
+| Student Management System | Django application with authentication, student CRUD, search, sorting, pagination, validation and SQLite | [Repository](https://github.com/Rudra0075-ms/Student_Management_System) |
+| Face Recognition Attendance System | Webcam-based face registration and recognition with local SQLite attendance logging; learning prototype | [Project folder](https://github.com/Rudra0075-ms/Python_Mini_Projects/tree/main/Face%20Recognition%20Attendance%20System) |
+| Email Extractor | Python script that extracts and deduplicates email addresses from text files using regex | [Repository](https://github.com/Rudra0075-ms/CodeAlpha_EmailExtractor) |
+| Hangman Game | Console word-guessing game built during the CodeAlpha Python internship | [Repository](https://github.com/Rudra0075-ms/CodeAlpha_HangmanGame) |
+| Python Mini Projects | Collection including chess, image-to-PDF conversion and small Python programs | [Repository](https://github.com/Rudra0075-ms/Python_Mini_Projects) |
+| Python Daily Practice | Python fundamentals, OOP, file handling, CSV and notebook exercises | [Repository](https://github.com/Rudra0075-ms/PYTHON_DAILY) |
 
-### Programming Languages
+Other frontend work includes a [Fitness Guide](https://github.com/Rudra0075-ms/fitness_guide), [All-in-One Calculator](https://github.com/Rudra0075-ms/All-in-one-Calculator), [Analog Watch](https://github.com/Rudra0075-ms/analog_watch), [Memory Card Game](https://github.com/Rudra0075-ms/memory_card_game) and [To-Do List](https://github.com/Rudra0075-ms/to-do-list___web).
 
-| Language | Level |
-|---|---|
-| 🐍 Python | Intermediate |
-| ☕ Java | Intermediate |
-| 🔧 C | Intermediate |
-| C++ | Basic |
-### Web Development
+## Internship experience
 
-| Technology | Level |
-|---|---|
-| 🌐 HTML | Basic |
-| 🎨 CSS | Basic |
-| ⚡ JavaScript | Basic |
+- **Python Full Stack Development Virtual Intern — EduSkills Foundation** (Aug 2026 – Oct 2026, 8 weeks). Built a Django Student Management System and practised authentication, CRUD, ORM, search, sorting, pagination and frontend integration.
+- **Python Programming Virtual Intern — CodeAlpha** (Sep 2026). Developed a Hangman Game and Email Extractor using Python, regular expressions and file handling. Received a Letter of Recommendation.
+- **AI & ML Virtual Intern — Google AI-ML Virtual Internship (EduSkills)** (Jun 2026 – Aug 2026, 8 weeks). Covered AI/ML fundamentals, supervised learning and model evaluation.
 
-### Tools & Technologies
+## Education
 
-| Tool | Purpose |
-|---|---|
-| 🗂️ Git | Version Control |
-| 🐙 GitHub | Repository Hosting |
-| 💻 VS Code | Code Editor |
-| 🧪 Antigravity IDE | Code Editor |
-| Google Colab | Code Editor |
+- **GITA Autonomous College, Bhubaneswar** — B.Tech, Computer Science & Engineering (AI & ML), Aug 2025 – May 2029; CGPA: **8.00**
+- **Bridgewell Global School, Bhubaneswar** — Class XII, 2024–2025; **60.4%**
 
-### Database
+## Certifications & recognition
 
-| Database | Level |
-|---|---|
-| 🛢️ MySQL | Basic |
+- Google AI & ML Virtual Internship — EduSkills (Jun 2026 – Aug 2026)
+- Python Full-Stack Development Virtual Internship — EduSkills (Aug 2026 – Oct 2026)
+- Python Programming Virtual Internship — CodeAlpha (Sep 2026), Letter of Recommendation received
+- Programming with C — Simplilearn via Coursera (Jan 2026)
+- CampusCrew Priority Member — Unstop (Aug 2026)
 
+## Run the portfolio locally
 
----
+The React application is inside `rudra-madhab-sahoo---portfolio/`.
 
-## 📂REAL TIME PROJECTS
+```bash
+cd rudra-madhab-sahoo---portfolio
+npm install
+npm run dev
+```
 
-| # | Project | Tech Stack | Description | Links |
-|---|---|---|---|---|
-| 1 | coming soon |
+Create a production build with:
 
----
+```bash
+npm run build
+```
 
+## Project structure
 
+```text
+rudra-madhab-sahoo---portfolio/
+├── public/
+│   ├── AI-ML-Virtual-Internship.pdf
+│   └── CNAME
+└── src/
+    ├── components/
+    ├── context/
+    ├── data/
+    ├── App.tsx
+    ├── index.css
+    ├── main.tsx
+    └── types.ts
+```
 
----
+## Profiles
 
-## 📂 Python Projects
-
-| # | Project | Tech Stack | Description | Links |
-|---|---|---|---|---|
-| 1 | 🧮 **Age Calculator Program** | Python | A simple Python program that calculates a person's exact age in years, months, and days based on their birth date. | [Repo](https://github.com/Rudra0075-ms/age_calculator) |
-| 2 | 💱 **Currency Converter Program** | Python | A simple Python project that converts one currency to another using real-time exchange rates from the CurrencyAPI. | [Repo](https://github.com/Rudra0075-ms/currency_converter) |
-| 3 | ⚖️  **Pounds to Kilogram Program** | Python | A simple Python program that converts weight from pounds (lbs) to kilograms (kg). | [Repo](https://github.com/Rudra0075-ms/pounds_to_kg_converter) |
-
----
-
----
-
-## 📂 Web Dev Projects
-
-| # | Project | Tech Stack | Description | Links |
-|---|---|---|---|---|
-| 1 | 🌐 **Portfolio Website** | HTML · CSS · JS | Personal portfolio showcasing skills, projects & learning journey | [Live](https://rudra0075-ms.github.io/portfolio/) · [Repo](https://github.com/Rudra0075-ms/portfolio) |
-| 2 | 💪 **Fitness Guide Website** | HTML · CSS · JS | Helps users maintain balanced diet and healthy lifestyle | [Live](https://rudra0075-ms.github.io/fitness_guide/) · [Repo](https://github.com/Rudra0075-ms/fitness_guide) |
-| 3 | 🧮 **All-in-One Calculator** | HTML · CSS · JS | Supports basic & scientific calculations with easy-to-use UI | [Live](https://rudra0075-ms.github.io/All-in-one-Calculator/) · [Repo](https://github.com/Rudra0075-ms/All-in-one-Calculator) |
-| 4 | 🕒 **Analog Watch** | HTML · CSS · JS | Real-time analog clock displaying Indian Standard Time (IST) | [Live](https://rudra0075-ms.github.io/analog_watch/) · [Repo](https://github.com/Rudra0075-ms/analog_watch) |
-| 5 | 🎮 **Memory Card Game** | HTML · CSS · JS | Interactive memory game with multiple difficulty levels | [Live](https://rudra0075-ms.github.io/memory_card_game/) · [Repo](https://github.com/Rudra0075-ms/memory_card_game) |
-| 6 | ✅ **To-Do List App** | HTML · CSS · JS | Task management app to organize and track daily activities | [Live](https://rudra0075-ms.github.io/to-do-list___web/) · [Repo](https://github.com/Rudra0075-ms/to-do-list___web) |
-
----
-
-## 📈 Currently Learning
-
-| Topic | Status |
-|---|---|
-| 🐍 Advanced Python | 🔄 In Progress |
-| 🧩 Data Structures & Algorithms | 🔄 In Progress |
-| 🤖 Agentic AI & AI Agents | 🔄 In Progress |
-| 🔗 LangChain & LangGraph | 🔄 In Progress |
-| 📊 Machine Learning Fundamentals | 🔄 In Progress |
-
----
-
-## 🎯 Goals for 2026
-
-| Goal | Area |
-|---|---|
-| 🐍 Master Python Programming | Core Skills |
-| 🧩 Strengthen DSA | Problem Solving |
-| 🤖 Build AI Agents with LangChain & LangGraph | AI / GenAI |
-| 🌍 Develop Real-World AI Projects | Portfolio |
-
----
-
-## 🏆 Achievements
-
-| Achievement |
-|---|
-| 💻 Learning by building Python projects consistently |
-| 🚀 Built 6+ personal web development websites |
-| ⭐ Currently pursuing the Google AI-ML Virtual Internship through Eduskills |
-| 🤖 Actively learning AI & Machine Learning |
-| 💡 Consistently improving coding & problem-solving skills |
-
----
-
-## 🌐 Coding Profiles
-
-| Platform | Link |
-|---|---|
-| 🐙 GitHub | [github.com/Rudra0075-ms](https://github.com/Rudra0075-ms) |
-| 📊 Codolio | [codolio.com/profile/Rms_007](https://codolio.com/profile/Rms_007) |
-
----
-
-## 📫 Connect With Me
-
-| Platform | Link |
-|---|---|
-| 🐙 GitHub | [github.com/Rudra0075-ms](https://github.com/Rudra0075-ms) |
-| 📧 Email | [msrudra0075@gmail.com](mailto:msrudra0075@gmail.com) |
-
----
-
-## ⭐ Fun Fact
-
-> I enjoy building projects, solving coding problems, and exploring new technologies.
-> Every project teaches me something new and helps me grow as a programmer.
-
----
-
-<p align="center">
-  <i>These projects represent my learning journey and hands-on practice in programming and web development.<br>
-  I am continuously improving my skills and working toward building impactful real-world projects in AI & Machine Learning.</i>
-</p>
-
-
-
-
-
-
-
-
-
-I'll update it soon....
+- [GitHub](https://github.com/Rudra0075-ms)
+- [LinkedIn](https://www.linkedin.com/in/rudra-madhab-sahoo-rms007/)
+- [Codolio](https://codolio.com/profile/Rms_007)
+- [Google Developer Profile](https://me.developers.google.com/u/rudramadhabsahoogita)
